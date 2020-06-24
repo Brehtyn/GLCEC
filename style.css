@@ -230,9 +230,9 @@ body {
 }
 
 .content_box {
-  width:960px;
-  margin-left:160px;
-  margin-right:160px;
+  width:760px;
+  margin-left:260px;
+  margin-right:260px;
   float:left;
   font-size:22px;
   line-height: 32px;
@@ -584,9 +584,9 @@ body {
   }
 
   .content_box {
-    width:760px;
-    margin-left:10px;
-    margin-right:10px;
+    width:600px;
+    margin-left:90px;
+    margin-right:90px;
     float:left;
     font-size:22px;
     line-height: 32px;
@@ -649,7 +649,7 @@ body {
 
 
   .profile {
-    width:800px;
+    width:600px;
     height:900px;
     float:left;
   }
@@ -661,6 +661,7 @@ body {
     float:left;
     margin: 0 -1rem;
     padding:0rem 1rem;
+    margin-top: 100px;
   }
 
   .footer_wrapper {
