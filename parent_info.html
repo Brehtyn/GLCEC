@@ -92,6 +92,16 @@ function time() {                                                          // ti
 	setTimeout("time()", 30000);
 }
 
+function openForm() {
+  document.getElementById("privateForm").style.display = "block";
+  document.getElementById("backgroundForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("privateForm").style.display = "none";
+  document.getElementById("backgroundForm").style.display = "none";
+}
+
 </script>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
@@ -165,7 +175,7 @@ You may find current information regarding upcoming public events and snack sche
 
 <br />
 
-Last Updated : 3 / 5 / 2020
+Last Updated : 7 / 10 / 2020
 
 <br /> <br /> <br /> <br />
 
@@ -197,7 +207,29 @@ Last Updated : 3 / 5 / 2020
 
 Here at Guiding Light, we take the well being and safety of all children very seriously.
 If for any reason you need to contact us with a serious complaint or
-private question please   <a href="mailto:name@fixlater.com?subject=Contact%20Us%20Request%20From%20Homepage"> click here.</a>
+private question please <a class="open_button" onclick="openForm()"> click here. </a>
+
+<div class="form-popup" id="privateForm">
+  <form action"/action_page.php" class="form-container">
+
+    Name:
+    <input type="text" class="private_form" name="private_name" placeholder="John Doe">
+
+    Phone Number:
+    <input type="tel" class="private_form" name="private_phone" placeholder="(928) - xxx - xxxx">
+    
+    Email:
+    <input type="email" class="private_form" name="private_email" placeholder="example@email.com">
+
+    Issue:
+    <input type="text" class="private_form" name="complaint" placeholder="What is the issue? ">
+
+    <button type="submit" class="btn" onclick="closeForm()">Submit</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+
+  </form>
+</div>
+<div class="form-background" id="backgroundForm"></div>
 
 <br /> <br />
 
