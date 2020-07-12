@@ -9,5 +9,4 @@
             - /bin/cp parent_info.html $DEPLOYPATH
             - /bin/cp donation.html $DEPLOYPATH
             - /bin/cp scholarships.html $DEPLOYPATH
-            - /bin/cp 404.shtml $DEPLOYPATH
-            - /bin/cp -R images $DEPLOYPATH
+            - /bin/cp -R assets $DEPLOYPATH
