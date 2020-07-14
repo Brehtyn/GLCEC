@@ -1004,8 +1004,8 @@ body {
 
     #pic_1 {
       height:auto;
-      width:220px;
-      float: right;
+      width:320px;
+      float: center;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
       border-radius: 12px;
@@ -1019,7 +1019,7 @@ body {
     #pic_2 {
       height:auto;
       float: center;
-      width:340px;
+      width:320px;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
       border-radius: 12px;
@@ -1123,6 +1123,7 @@ body {
       border-style: groove;
       border-width:3px;
       border-color: #1000;
+      margin-left: 5px;
     }
 
     #testimony_slideshow {
@@ -1142,7 +1143,7 @@ body {
       width:155px;
       height:320px;
       float:left;
-      font-size:17px;
+      font-size:15px;
       text-align:center;
       -moz-border-radius: 12px;
       border-radius: 12px;
