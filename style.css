@@ -1063,7 +1063,7 @@ body {
     .footer_background {
       background-image: url(assets/footer.png);
       background-repeat:repeat-x;
-      width: 100%;
+      width: 105%;
       float:left;
       margin: 0 -1rem;
       padding:0rem 1rem;
@@ -1158,7 +1158,7 @@ body {
     .footer_links{
       width:360px;
       height:90px;
-      padding-top:25px;
+      padding-top:20px;
       float:left;
       font-size:17px;
       text-align:center;
@@ -1168,7 +1168,7 @@ body {
       width:360px;
       height:30px;
       float:left;
-      font-size:16px;
+      font-size:14px;
       text-align:center;
       padding-top:10px;
       padding-bottom:20px;
