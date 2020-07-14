@@ -28,7 +28,7 @@ object {
 }
 
 a { color: #000; }
-a:hover { color: #fff000; }
+a:hover { color: darkcyan; }
 
 #caption {
   font-size:18px;
@@ -37,8 +37,9 @@ a:hover { color: #fff000; }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  POP-UPs  ~~~~~~~~~~~~~~~~~~~~~~~  */
 
 .open_button {
-  color: red;
+  color: darkgreen;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .form-background {
@@ -61,7 +62,7 @@ a:hover { color: #fff000; }
   margin-left: -112px;
   background-color:white;
   width:200px;
-  height:410px;
+  height:210px;
   padding: 20px;
   z-index: 9;
   -moz-border-radius: 12px;
@@ -83,14 +84,20 @@ a:hover { color: #fff000; }
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
   margin-top:20px;
   opacity: 0.8;
 }
 
-.cancel {
+.btn_cancel {
   background-color: red;
   margin-top:10px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  opacity: 0.8;
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  PC Viewing  ~~~~~~~~~~~~~~~~~~~~~~~  */
