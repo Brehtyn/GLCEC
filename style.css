@@ -114,9 +114,9 @@ body {
 }
 
 .banner_l{
-  width:769px;
+  width:740px;
   height:50px;
-  margin-left:140px;
+  margin-left:160px;
   margin-top:-24px;
   float:left;
   font-weight:bold;
@@ -859,7 +859,7 @@ body {
 
     .banner_l {
       width:360px;
-      height:60px;
+      height:40px;
       float:center;
       font-weight:bold;
       font-size:20px;
@@ -924,19 +924,19 @@ body {
       background-image: url(assets/l_links.png);
       background-repeat:repeat-x;
       background-position:center;
-      font-size:13px;
+      font-size:11px;
     }
     #c_link{
       background-image: url(assets/links.png);
       background-repeat:repeat-x;
       background-position:center;
-      font-size:13px;
+      font-size:11px;
     }
     #drop_button {
       background-image: url(assets/r_links.png);
       background-repeat:repeat-x;
       background-position:center;
-      font-size:13px;
+      font-size:11px;
     }
 
     .link {
@@ -1004,7 +1004,7 @@ body {
 
     #pic_1 {
       height:auto;
-      width:320px;
+      width:300px;
       float: center;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
@@ -1012,8 +1012,7 @@ body {
       -moz-box-shadow: 4px 4px 14px #000;
       -webkit-box-shadow: 4px 4px 14px #000;
       box-shadow: 4px 4px 14px #000;
-      margin-left: 30px;
-      margin-top: 30px;
+      margin:20px;
     }
 
     #pic_2 {
