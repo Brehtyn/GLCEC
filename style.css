@@ -1055,7 +1055,7 @@ body {
     }
 
     .profile {
-      width:400px;
+      width380px;
       height:1220px;
       float:left;
     }
@@ -1070,7 +1070,7 @@ body {
     }
 
     .footer_wrapper{
-      width:400px;
+      width:380px;
       height:765px;
       margin: 0 auto;
       font-size:20px;
@@ -1085,7 +1085,7 @@ body {
     }
 
     .footer_box{
-      width:400px;
+      width:380px;
       height:395px;
       float:left;
       font-size:20px;
@@ -1110,7 +1110,7 @@ body {
     }
 
     .footer_box_2{
-      width:170px;
+      width:150px;
       height:320px;
       float:left;
       font-size:17px;
@@ -1140,7 +1140,7 @@ body {
     }
 
     .footer_box_3{
-      width:170px;
+      width:150px;
       height:320px;
       float:left;
       font-size:17px;
