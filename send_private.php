@@ -64,7 +64,7 @@ header( "Location: $index" );
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
-elseif ( isInjected($email_address) || isInjected($first_name)  || isInjected($comments) ) {
+elseif ( isInjected($phone_number) || isInjected($email_address) || isInjected($alias_name)  || isInjected($comments) ) {
 header( "Location: $error_page" );
 }
 
