@@ -102,6 +102,24 @@ function closeForm() {
   document.getElementById("backgroundForm").style.display = "none";
 }
 
+function validateForm() {
+  var x = document.forms["privateForm"]["private_name"].value;
+  if (x == "") {
+    alert("Please provide some sort of name or alias.");
+    return false;
+  }
+  var y = document.forms["privateForm"]["complaint"].value;
+  if (y == "") {
+    alert("Please include your question or details of your complaint.");
+    return false;
+  }
+  var i = document.forms["privateForm"]["private_phone"].value;
+  var o = document.forms["privateForm"]["private_email"].value;
+  if ((i || o) == "") { 
+    alert("No contact information was included, meaning it is impossible to reply to this message. If that was a mistake please submit another form.");
+  }
+}
+
 </script>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
@@ -172,35 +190,34 @@ You may find current information regarding upcoming public events and snack sche
 
 <br /> <br />
 
-<img id="pic_2" src="assets/services.jpg" width="75%" alt="kids playing together">
+<img id="pic_2" src="assets/services.jpg" width="60%" alt="kids playing together">
 
 <br />
 
-Last Updated : 7 / 10 / 2020
+Last Updated : 7 / 14 / 2020
 
 <br /> <br /> <br /> <br />
 
-<h2> Lunch/Snack Schedule </h2>
+<h2> Snack Schedule </h2>
 
-<object data="assets/events.pdf" type="application/pdf" width="80%" height="600px">
+<object data="assets/snack.pdf" alt="snack menu schedule" type="application/pdf" width="80%" height="600px">
+  <p> It appears you don't have a PDF plugin for this browser.
+    No biggie... you can <a href="assets/snack.pdf">click here to
+    download the PDF file.</a></p>
+</object>
+
+  <br /> <br /> <br /> 
+
+<h2> Events </h2>
+
+<object data="assets/events.pdf" alt="events posted" type="application/pdf" width="80%" height="600px">
   <p> It appears you don't have a PDF plugin for this browser.
     No biggie... you can <a href="assets/events.pdf">click here to
     download the PDF file.</a></p>
 </object>
 
-  <br /> <br /> <br /> <br />
 
-<h2> Upcoming Events </h2>
-
-<object data="assets/lunch.pdf" type="application/pdf" width="80%" height="600px">
-  <p> It appears you don't have a PDF plugin for this browser.
-      No biggie... you can <a href="assets/lunch.pdf">click here to
-      download the PDF file.</a></p>
-</object>
-
-
-<br /> <br />
-<br /> <br />
+<div class="spacer"> </div>
 
 <h2> Complaints & Support </h2>
 
@@ -211,7 +228,7 @@ If for any reason you need to contact us with a serious complaint or
 private question please <a class="open_button" onclick="openForm()"> click here. </a>
 
 <div class="form-popup" id="privateForm">
-  <form action"/action_page.php" class="form-container">
+  <form name="privateForm" method="post" action"send_mail.php" class="form-container">
 
     Name:
     <input type="text" class="private_form" name="private_name" placeholder="John Doe">
@@ -225,8 +242,8 @@ private question please <a class="open_button" onclick="openForm()"> click here.
     Issue:
     <input type="text" class="private_form" name="complaint" placeholder="What is the issue? ">
 
-    <button type="submit" class="btn" onclick="closeForm()">Submit</button>
-    <button type="submit" class="btn_cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn" onclick="return validateForm()">Submit</button>
+    <button class="btn_cancel" onclick="closeForm()">Close</button>
 
   </form>
 </div>
