@@ -226,7 +226,7 @@ If for any reason you need to contact us with a serious complaint or
 private question please <a class="open_button" onclick="openForm()"> click here. </a>
 
 <div class="form-popup" id="privateForm">
-  <form name="privateForm" method="post" action"send_mail.php" class="form-container">
+  <form name="privateForm" method="post" action"send_private.php" class="form-container">
 
     Name:
     <input type="text" class="private_form" name="private_name" placeholder="John Doe">
@@ -238,7 +238,7 @@ private question please <a class="open_button" onclick="openForm()"> click here.
     <input type="email" class="private_form" name="private_email" placeholder="example@email.com">
 
     Issue:
-    <input type="text" class="private_form" name="complaint" placeholder="What is the issue? ">
+    <input type="text" class="private_form" name="comments" placeholder="What is the issue? ">
 
     <button type="submit" class="btn" onclick="return validateForm()">Submit</button>
     <button class="btn_cancel" onclick="closeForm()">Close</button>
