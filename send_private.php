@@ -56,9 +56,9 @@ header( "Location: $index" );
 }
 
 // If the form fields are empty, redirect to the error page.
-elseif (empty($first_name) || empty($email_address)) {
-header( "Location: $error_page" );
-}
+// elseif (empty($first_name) || empty($email_address)) {
+// header( "Location: $error_page" );
+// }
 
 /* 
 If email injection is detected, redirect to the error page.
