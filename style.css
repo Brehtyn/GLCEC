@@ -120,9 +120,9 @@ body {
 }
 
 .banner_l{
-  width:740px;
-  height:50px;
-  margin-left:160px;
+  width:650px;
+  height:25px;
+  margin-left:175px;
   margin-top:-24px;
   float:left;
   font-weight:bold;
@@ -133,7 +133,7 @@ body {
 
 .banner_r{
   width:360px;
-  height:50px;
+  height:25px;
   margin-top:-5px;
   font-weight:bold;
   float:left;
@@ -145,8 +145,7 @@ body {
 
 .header{
   width:1280px;
-  height:400px;
-  margin-top:15px;
+  height:380px;
   float:left;
 }
 
@@ -172,7 +171,7 @@ body {
 }
 
 #pic_left {
-	height:200px;
+	height:140px;
 	padding-top:250px;
   padding-left:150px;
 	width:50px;
@@ -191,7 +190,7 @@ body {
 }
 
 #pic_right {
-  height:200px;
+  height:140px;
   padding-top:250px;
   padding-right:100px;
   width:100px;
@@ -562,7 +561,7 @@ body {
     width:100%;
     height:75px;
     float:left;
-    padding-top:190px;
+    padding-top:120px;
     font-family:"Raleway", Arial;
     font-weight:bold;
     padding-left: 10px;
@@ -865,10 +864,11 @@ body {
 
     .banner_l {
       width:360px;
-      height:40px;
+      height:30px;
+      margin-top:-10px;
       float:center;
       font-weight:bold;
-      font-size:20px;
+      font-size:18px;
       font-family:"pageHeader", "Raleway", Arial;
       text-align:center;
     }
@@ -878,7 +878,7 @@ body {
       height:30px;
       font-weight:bold;
       float:center;
-      font-size:20px;
+      font-size:18px;
       font-family:"pageHeader", "Raleway", Arial;
       text-align:center;
     }
@@ -913,7 +913,7 @@ body {
       width:100%;
       height:75px;
       float:left;
-      padding-top:160px;
+      padding-top:80px;
       font-family:"Raleway", Arial;
       font-weight:bold;
     }
