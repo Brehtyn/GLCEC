@@ -34,6 +34,28 @@ a:hover { color: darkcyan; }
   font-size:18px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size:22px;
+}
+
+ol {
+  list-style-type:lower-roman;
+  margin: 0;
+  padding: 0;
+  font-size:22px;
+  list-style-position: center;
+}
+
+li {
+
+}
+#li_border{
+  border:1px solid #000000;
+}
+
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  POP-UPs  ~~~~~~~~~~~~~~~~~~~~~~~  */
 
 .open_button {
@@ -120,13 +142,13 @@ body {
 }
 
 .banner_l{
-  width:650px;
+  width:645px;
   height:25px;
-  margin-left:175px;
+  margin-left:200px;
   margin-top:-24px;
   float:left;
   font-weight:bold;
-  font-size:20px;
+  font-size:18px;
   font-family:"pageHeader", "Raleway", Arial;
   text-align:left;
 }
@@ -137,7 +159,7 @@ body {
   margin-top:-5px;
   font-weight:bold;
   float:left;
-  font-size:20px;
+  font-size:18px;
   font-family:"pageHeader", "Raleway", Arial;
   text-align:left;
 }
@@ -344,6 +366,20 @@ body {
   margin-right: 30px;
 }
 
+#enroll_pic {
+  height:auto;
+  width: 45%;
+  float: left;
+  margin:15px;
+  margin-left:20px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+}
+
 #pic_teach {
   height:auto;
   float: center;
@@ -515,7 +551,7 @@ body {
     height:30px;
     float:center;
     font-weight:bold;
-    font-size:20px;
+    font-size:18px;
     font-family:"pageHeader", "Raleway", Arial;
     text-align: center;
   }
@@ -525,7 +561,7 @@ body {
     height:30px;
     font-weight:bold;
     float:center;
-    font-size:20px;
+    font-size:18px;
     font-family:"pageHeader", "Raleway", Arial;
     text-align: center;
   }
@@ -700,6 +736,19 @@ body {
     margin-right: 30px;
   }
 
+  #enroll_pic {
+    height:auto;
+    float: center;
+    width:65%;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+    margin:15px;
+  }
+
   #pic_teach {
     height:auto;
     float: center;
@@ -868,7 +917,7 @@ body {
       margin-top:-10px;
       float:center;
       font-weight:bold;
-      font-size:18px;
+      font-size:15px;
       font-family:"pageHeader", "Raleway", Arial;
       text-align:center;
     }
@@ -878,7 +927,7 @@ body {
       height:30px;
       font-weight:bold;
       float:center;
-      font-size:18px;
+      font-size:15px;
       font-family:"pageHeader", "Raleway", Arial;
       text-align:center;
     }
@@ -1047,6 +1096,19 @@ body {
       margin-bottom:15px;
     }
 
+    #enroll_pic {
+      height:auto;
+      float: center;
+      width:320px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+      border-radius: 12px;
+      -moz-box-shadow: 4px 4px 14px #000;
+      -webkit-box-shadow: 4px 4px 14px #000;
+      box-shadow: 4px 4px 14px #000;
+      margin:15px;
+    }
+
     #pic_teach
     {
       height:auto;
@@ -1110,11 +1172,11 @@ body {
         font-weight:bold;
     }
 
-    .footer_box_1{
+    .footer_box_1 {
       display: none;
     }
 
-    .footer_box_2{
+    .footer_box_2 {
       width:155px;
       height:320px;
       float:left;
@@ -1129,7 +1191,7 @@ body {
       border-width:3px;
       border-color: #1000;
       margin-left: 5px;
-    }
+      }
 
     #testimony_slideshow {
       width:150px;
