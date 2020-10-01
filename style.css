@@ -422,7 +422,7 @@ body {
 }
 
 .profile {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .footer_background {
@@ -780,7 +780,7 @@ body {
   }
 
   #pic_teach {
-    height:auto;
+    height:300px;
     float: center;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -792,9 +792,7 @@ body {
 
 
   .profile {
-    width:600px;
-    height:900px;
-    float:left;
+    padding-bottom: 20px;
   }
 
   .footer_background {
@@ -1141,7 +1139,7 @@ body {
 
     #pic_teach
     {
-      height:auto;
+      height:200px;
       float: center;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
@@ -1152,9 +1150,7 @@ body {
     }
 
     .profile {
-      width: 340px;
-      height:1220px;
-      float:left;
+     padding-bottom: 20px;
     }
 
     .footer_background {
