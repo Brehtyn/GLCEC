@@ -1,339 +1,461 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160624111-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160624111-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-160624111-1');
-</script>
+    gtag('config', 'UA-160624111-1');
+  </script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Brentyn Hanna">
-<meta name="principal" content="Floriana Hanna">
-<meta name="school" content="Guiding Light Christian Educational Center">
-<meta name="description" content="The official website of our school and child-care services, Guiding Light Christian Educational Center.">
-<meta name="keywords" content="GLCEC, School, Preschool, Kindergarten, Childcare, Certified, Lake Havasu City, LHC">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Brentyn Hanna">
+  <meta name="principal" content="Floriana Hanna">
+  <meta name="school" content="Guiding Light Christian Educational Center">
+  <meta name="description"
+    content="The official website of our school and child-care services, Guiding Light Christian Educational Center.">
+  <meta name="keywords" content="GLCEC, School, Preschool, Kindergarten, Childcare, Certified, Lake Havasu City, LHC">
 
 
-<title>Guiding Light School</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+  <title>Guiding Light School</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 
-      <!--  Body  -->  <!--  Body  -->  <!--  Body  -->   <!--  Body  -->
+<!--  Body  -->
+<!--  Body  -->
+<!--  Body  -->
+<!--  Body  -->
 
 <body onLoad="time()">
-<script>
-var distance;
-var pic_slideshow = ["url(assets/banner_1.png)","url(assets/banner_2.png)","url(assets/banner_3.png)","url(assets/banner_4.png)","url(assets/banner_5.png)"];   // initiate slideshow
-var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'","'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'","'We love Guiding Light! My son has learned and grown so much since attending.'","'Thank you so much for making my girls feel at home.'","'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
-var testimony_slideshow_bottom = [" - Tina V"," - Mo S."," - Melanie N."," -Al L."," - Jodie C."];
-var links = ["index.html","https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light","donation.html","enroll.html","https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
-var i = 0;
+  <script>
+    var distance;
+    var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)"];   // initiate slideshow
+    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
+    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."];
+    var links = ["index.html", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
+    var i = 0;
 
-window.onbeforeunload = function () {                                     // scroll to top
-  window.scrollTo(0, 0);
-}
+    window.onbeforeunload = function () {                                     // scroll to top
+      window.scrollTo(0, 0);
+    }
 
-function picleft() {                                                       // scroll left on slideshow
-	if (i <= 0) { i = 4 }
-	else { i-- }
-	document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
-  document.getElementById('links_slideshow').href = links[i];
-}
+    function picleft() {                                                       // scroll left on slideshow
+      if (i <= 0) { i = 4 }
+      else { i-- }
+      document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
+      document.getElementById('links_slideshow').href = links[i];
+    }
 
-function picright() {                                                      // scroll right on slideshow
-  if (i >= 4) { i = 0 }
-	else { i++ }
-	document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
-  document.getElementById('links_slideshow').href = links[i];
-}
+    function picright() {                                                      // scroll right on slideshow
+      if (i >= 4) { i = 0 }
+      else { i++ }
+      document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
+      document.getElementById('links_slideshow').href = links[i];
+    }
 
-$( document ).ready(function() {
-  var scrollTop     = $(window).scrollTop();                              // Find distance from top of page
-  var navmenu       = document.getElementById("link_menu");               // Put link menu element in a variable
-  var navelementOffset = navmenu.offsetTop;                               // Find offset of link menu element
+    $(document).ready(function () {
+      var scrollTop = $(window).scrollTop();                              // Find distance from top of page
+      var navmenu = document.getElementById("link_menu");               // Put link menu element in a variable
+      var navelementOffset = navmenu.offsetTop;                               // Find offset of link menu element
 
-  distance      = (navelementOffset - scrollTop);                            // Calculate link menu from top of page
-});
+      distance = (navelementOffset - scrollTop);                            // Calculate link menu from top of page
+    });
 
-$(window).scroll(function(){
-  var activeTop = $(window).scrollTop();                                  // Find distance from top of page
-  if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
-      $('.link_menu').css("position","static");
-  }
-  else {
-      $('.link_menu').css("position","fixed");                            // anchored link menu to page
-      $('.link_menu').css("top","-15px");
-      $('.link_menu').css("left","absolute");
-  }
-});
+    $(window).scroll(function () {
+      var activeTop = $(window).scrollTop();                                  // Find distance from top of page
+      if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
+        $('.link_menu').css("position", "static");
+      }
+      else {
+        $('.link_menu').css("position", "fixed");                            // anchored link menu to page
+        $('.link_menu').css("top", "-15px");
+        $('.link_menu').css("left", "absolute");
+      }
+    });
 
-function advance() {                                                      // auto change slide
-	document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
-  document.getElementById('testimony_slideshow').textContent=testimony_slideshow[i];
-  document.getElementById('testimony_slideshow_bottom').textContent=testimony_slideshow_bottom[i];
-  document.getElementById('links_slideshow').href = links[i];
-	i++;
-}
-function time() {                                                          // timer
-	i = 0;
-	setTimeout("advance()" , 5000);
-	setTimeout("advance()" , 10000);
-	setTimeout("advance()" , 15000);
-	setTimeout("advance()" , 20000);
-	setTimeout("advance()" , 25000);
-	setTimeout("time()", 30000);
-}
+    function advance() {                                                      // auto change slide
+      document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
+      document.getElementById('testimony_slideshow').textContent = testimony_slideshow[i];
+      document.getElementById('testimony_slideshow_bottom').textContent = testimony_slideshow_bottom[i];
+      document.getElementById('links_slideshow').href = links[i];
+      i++;
+    }
+    function time() {                                                          // timer
+      i = 0;
+      setTimeout("advance()", 5000);
+      setTimeout("advance()", 10000);
+      setTimeout("advance()", 15000);
+      setTimeout("advance()", 20000);
+      setTimeout("advance()", 25000);
+      setTimeout("time()", 30000);
+    }
 
-</script>
+    function openForm_contact() {
+      document.getElementById("contactForm").style.display = "block";
+      document.getElementById("backgroundForm").style.display = "block";
+    }
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+    function openForm_private() {
+      document.getElementById("privateForm").style.display = "block";
+      document.getElementById("backgroundForm").style.display = "block";
+    }
 
-<div class="background">
-<div class="wrapper">
+    function openForm_enroll() {
+      document.getElementById("enrollForm").style.display = "block";
+      document.getElementById("backgroundForm").style.display = "block";
+    }
 
-    <!-- banners -->     <!-- banners -->     <!-- banners -->     <!-- banners -->
+    function closeForm() {
+      document.getElementById("privateForm").style.display = "none";
+      document.getElementById("enrollForm").style.display = "none";
+      document.getElementById("contactForm").style.display = "none";
+      document.getElementById("backgroundForm").style.display = "none";
+    }
 
-    <div class="banner_l">
-      <p>
-          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png" width="20" alt="go to donation" align="top"> Donate</a>
-        &nbsp	&nbsp
-        <a href="https://www.facebook.com/GuidingLightChristianEducationalCenter/" style="text-decoration:none;"> <img src="assets/facebook.png" width="20" alt="go to facebook" align="top"> Facebook</a>
-        &nbsp &nbsp
-        <a href="https://goo.gl/maps/ifVrNqKA4fRYr2xH6" style="text-decoration:none;"> <img src="assets/map.png" width="20" alt="navigate map" align="top"> 220 Mescal Ln  </a>
-        &nbsp	&nbsp
-      </p>
+    function validateForm() {
+      var j = document.forms["contactForm"]["name"].value;
+      if (j == "") {
+        alert("Please provide your name.");
+        return false;
+      }
+      var k = document.forms["contactForm"]["phone"].value;
+      if (k == "") {
+        alert("Please provide your phone number.");
+        return false;
+      }
+      var k = document.forms["contactForm"]["email"].value;
+      if (k == "") {
+        alert("Please provide your email address.");
+        return false;
+      }
+      var k = document.forms["contactForm"]["comments"].value;
+      if (k == "") {
+        alert("Please include your desired comment.");
+        return false;
+      }
+
+    }
+
+  </script>
+
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+
+  <div class="background">
+    <div class="wrapper">
+
+      <!-- banners -->
+      <!-- banners -->
+      <!-- banners -->
+      <!-- banners -->
+
+      <div class="banner_l">
+        <p>
+          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png" width="20"
+              alt="go to donation" align="top"> Donate</a>
+          &nbsp &nbsp
+          <a href="https://www.facebook.com/GuidingLightChristianEducationalCenter/" style="text-decoration:none;"> <img
+              src="assets/facebook.png" width="20" alt="go to facebook" align="top"> Facebook</a>
+          &nbsp &nbsp
+          <a href="https://goo.gl/maps/ifVrNqKA4fRYr2xH6" style="text-decoration:none;"> <img src="assets/map.png"
+              width="20" alt="navigate map" align="top"> 220 Mescal Ln </a>
+          &nbsp &nbsp
+        </p>
       </div>
       <div class="banner_r">
-        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" width="18" alt="call phone" align="top"> (928) 855-1022  </a>
-        &nbsp 	&nbsp    &nbsp 	&nbsp
-        <a href="mailto:name@fixlater.com?subject=Contact%20Us%20Request%20From%20Homepage" style="text-decoration:none;"> <img src="assets/mail.png" width="20" alt="go to donation" align="top"> Contact Us</a>
-      </p>
-      </div>      
+        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" width="18"
+            alt="call phone" align="top"> (928) 855-1022 </a>
+        &nbsp &nbsp &nbsp &nbsp
+        <a href="mailto:name@fixlater.com?subject=Contact%20Us%20Request%20From%20Homepage"
+          style="text-decoration:none;"> <img src="assets/mail.png" width="20" alt="go to donation" align="top"> Contact
+          Us</a>
+        </p>
+      </div>
 
-<div class="header">
-  <div id="pic_left" onClick="picleft()"> </div>
-  <a id="links_slideshow" href="index.html"> <div id="pic_slideshow">  </div> </a>
-  <div id="pic_right" onClick="picright()"> </div>
-</div>
+      <div class="header">
+        <div id="pic_left" onClick="picleft()"> </div>
+        <a id="links_slideshow" href="index.html">
+          <div id="pic_slideshow"> </div>
+        </a>
+        <div id="pic_right" onClick="picright()"> </div>
+      </div>
 
-      <!-- links -->       <!-- links -->       <!-- links -->       <!-- links -->
+      <!-- links -->
+      <!-- links -->
+      <!-- links -->
+      <!-- links -->
 
-<div class="link_wrapper">
-<div id="link_menu" class="link_menu">
-<div class="link" id="l_link"> <a class="link" href="index.html"> Home </a> </div>
-<div class="link" id="c_link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
-<div class="link" id="c_link"> <a class="link" href="about_us.html"> About Us </a> </div>
-<div class="link" id="c_link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
-<div class="link" id="drop_button"> <a class="link"> Useful Links </a>
-  <div class="drop">
-    <div class="drop_link"> <a href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light" class="link"> Az Dep. of Health Services </a> </div>
-    <div class="drop_link"> <a href="https://www.azccrr.com/" class="link"> Childcare Resources & Refs </a> </div>
-    <div class="drop_link"> <a href="https://des.az.gov/services/child-and-family/child-care/how-apply-for-child-care-assistance" class="link"> Dep. of Economic Security </a> </div>
-    <div class="drop_link"> <a href="https://www.firstthingsfirst.org/" class="link"> First Things First </a> </div>
-    <div class="drop_link"> <a href="https://ecedassociates.com/" class="link"> Early Childhood Edu Inc. </a> </div>
-    <div class="drop_link"> <a href="https://www.birthtofivehelpline.org/" class="link"> Birth to Five Helpline </a> </div>
-    <div class="drop_link"> <a href="https://www.zerotothree.org/" class="link"> Zero to Three  </a> </div>
-    <div class="drop_link"> <a href="scholarships.html" class="link"> Scholarship Info </a> </div>
-  </div>
-</div>
-</div>
-</div>
+      <div class="link_wrapper">
+        <div id="link_menu" class="link_menu">
+          <div class="link" id="l_link"> <a class="link" href="index.html"> Home </a> </div>
+          <div class="link" id="c_link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
+          <div class="link" id="c_link"> <a class="link" href="about_us.html"> About Us </a> </div>
+          <div class="link" id="c_link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
+          <div class="link" id="drop_button"> <a class="link"> Useful Links </a>
+            <div class="drop">
+              <div class="drop_link"> <a
+                  href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light" class="link"> Az
+                  Dep. of Health Services </a> </div>
+              <div class="drop_link"> <a href="https://www.azccrr.com/" class="link"> Childcare Resources & Refs </a>
+              </div>
+              <div class="drop_link"> <a
+                  href="https://des.az.gov/services/child-and-family/child-care/how-apply-for-child-care-assistance"
+                  class="link"> Dep. of Economic Security </a> </div>
+              <div class="drop_link"> <a href="https://www.firstthingsfirst.org/" class="link"> First Things First </a>
+              </div>
+              <div class="drop_link"> <a href="https://ecedassociates.com/" class="link"> Early Childhood Edu Inc. </a>
+              </div>
+              <div class="drop_link"> <a href="https://www.birthtofivehelpline.org/" class="link"> Birth to Five
+                  Helpline </a> </div>
+              <div class="drop_link"> <a href="https://www.zerotothree.org/" class="link"> Zero to Three </a> </div>
+              <div class="drop_link"> <a href="scholarships.html" class="link"> Scholarship Info </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <!-- content -->  <!-- content -->  <!-- content -->  <!-- content -->
+      <!-- content -->
+      <!-- content -->
+      <!-- content -->
+      <!-- content -->
 
-<div class="content_box">
+      <div class="content_box">
 
-  <h1> Our Founding & History </h1>
+        <h1> Our Founding & History </h1>
 
-  <br /> 
+        <br />
 
-  <p>
+        <p>
 
-    For over 35 years, Guiding Light has excelled at helping students reach the most potential they can from their early education. Combined with the help of the timeless inclusive moral teachings
-    of the Christian bible, our school has consistently not only prepared students for general education, but life as well. With constant support from alumni and supportive parents,
-    we believe our methods are time-tested and will continue to be one of the brightest oppournitiest Lake Havasu City can provide for any child.
+          For over 35 years, Guiding Light has excelled at helping students reach the most potential they can from their
+          early education. Combined with the help of the timeless inclusive moral teachings
+          of the Christian bible, our school has consistently not only prepared students for general education, but life
+          as well. With constant support from alumni and supportive parents,
+          we believe our methods are time-tested and will continue to be one of the brightest oppournitiest Lake Havasu
+          City can provide for any child.
 
-  </p>
+        </p>
 
-  <br/>
+        <br />
 
-<img id="" src="assets/history.jpg" alt="Picture of Guiding Light Christian Education Center when it first opened" width="45%">
+        <img id="" src="assets/history.jpg"
+          alt="Picture of Guiding Light Christian Education Center when it first opened" width="45%">
 
-<img id="" src="assets/history2.jpg" alt="Archived News Herald Clipping. Visible text reads: 'Wednesday, June 12 1985 | Christian preschool offers diversity'" width="45%">
+        <img id="" src="assets/history2.jpg"
+          alt="Archived News Herald Clipping. Visible text reads: 'Wednesday, June 12 1985 | Christian preschool offers diversity'"
+          width="45%">
 
-  <br /> <br />
+        <br /> <br />
 
-<p>
+        <p>
 
-  Guiding Light has been blessed with oppourtinues to grow our school & expand the program to not only
-  primary schooling, but increase the number of classrooms in hope to accomodate all of Lake  Havasu's important early education needs!
+          Guiding Light has been blessed with oppourtinues to grow our school & expand the program to not only
+          primary schooling, but increase the number of classrooms in hope to accomodate all of Lake Havasu's important
+          early education needs!
 
-  <br/> <br/>
+          <br /> <br />
 
-<img id="pic_2" src="assets/intro.jpg" alt="children hanging from domed playground equipment" width="70%">
-  
-<img id="pic_2" src="assets/school_overview.jpg" alt="A shot of the preschool with the American Flag" width="70%">
+          <img id="pic_2" src="assets/intro.jpg" alt="children hanging from domed playground equipment" width="70%">
 
-<img id="pic_2" src="assets/playground.jpg" alt="Swing set, benches, playground sets and other outdoor equipment" width="70%" >
+          <img id="pic_2" src="assets/school_overview.jpg" alt="A shot of the preschool with the American Flag"
+            width="70%">
 
-<br /> <br /> <br />
-  
-To view our Arizona state license, please
-<a href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light"> click here. </a>
+          <img id="pic_2" src="assets/playground.jpg"
+            alt="Swing set, benches, playground sets and other outdoor equipment" width="70%">
 
-</p>
+          <br /> <br /> <br />
 
-<div class="spacer"> </div>
+          To view our Arizona state license, please
+          <a href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light"> click here. </a>
 
-<h1> The Education </h1>
+        </p>
 
-<br /> <br />
-  <p>
+        <div class="spacer"> </div>
 
-  <img id="pic_1" src="assets/philosphy.jpg" alt="Kids focusing on their work" width="70%" >
+        <h1> The Education </h1>
 
-  The core curriculum consists of reading, math, oral language, and science. Additionally, children experience many oppourtunities to learn skills designed to compliment the core curriculum including:
-  art, music, physical activity, Bible study, social developement, computer skills, and foreign languages.
-  
-  We believes in our students developing at their own pace. Despite this, we also feel that it is important that the 
-  students understand the grading system that is used to provide preparation for the advancded education beyond GLCEC.
-  Teachers may make curriculum adoptions at any time and grade the students with in the guidelines of those adoptions. 
+        <br /> <br />
+        <p>
 
-</p>
+          <img id="pic_1" src="assets/philosphy.jpg" alt="Kids focusing on their work" width="70%">
 
-<div class="spacer"> </div>
+          The core curriculum consists of reading, math, oral language, and science. Additionally, children experience
+          many oppourtunities to learn skills designed to compliment the core curriculum including:
+          art, music, physical activity, Bible study, social developement, computer skills, and foreign languages.
 
-<h1> Meet the Front Office! </h1>
+          We believes in our students developing at their own pace. Despite this, we also feel that it is important that
+          the
+          students understand the grading system that is used to provide preparation for the advancded education beyond
+          GLCEC.
+          Teachers may make curriculum adoptions at any time and grade the students with in the guidelines of those
+          adoptions.
 
-<br /> <br />
+        </p>
 
+        <div class="spacer"> </div>
 
-<div class="profile">
-  <h3> Shanta Abbott </h3>
-  <h5> Executive Administrator </h5>
-  <img src="assets/teachers/abbott.jpg" id="pic_teach" alt="Picture of the Teacher Shanta Abbott ">
+        <h1> Meet the Front Office! </h1>
 
-  <p> Future Description  </p>
-</div>
+        <br /> <br />
 
-<div class="profile">
-  <h3> Nadine Bartels </h3>
-  <h4> Director </h4>
-  <img src="assets/teachers/bartels.jpg" id="pic_teach" alt="Picture of the Teacher Nadine Bartels">
+        <div class="profile">
+          <h3> Nadine Bartels </h3>
+          <h4> Director </h4>
+          <img src="assets/teachers/bartels.jpg" id="pic_teach" alt="Picture of the Teacher Nadine Bartels">
+          <p>
+            My name is Nadine Bartels and I’ve lived in Lake Havasu city since 1976. I never dreamed I’d be the
+            director of this place I love so much, but the Lord works in mysterious ways. One day in 1986 I applied for
+            a job at Guiding Light,
+            A job that truly changed my life. The Lord puts us right where we are needed. To my role as director I bring
+            34 years of early education & elementary education experience most of it direct classroom time,
+            and the vast majority of it here at Guiding Light. I’m the proud mother of three Guiding Light alumni, each
+            successful in their
+            chosen field . I believe because of the strong foundations and ethics instilled here at Guiding Light. My
+            heart is full of joy as
+            I continue the journey our founder began in 1985. I cannot think of anything I want to do more than to
+            continue to guide Lake Havasu
+            city’s children.
 
-  <p> Future Description </p>
-</div>
+          </p>
+        </div>
 
-<div class="profile">
-  <h3> Raelene Hanna </h3>
-  <h5> Office Administrator </h5> </h5>
-  <img src="assets/teachers/rhanna.jpg" id="pic_teach" alt="Picture of the Teacher Raelene Hanna ">
+        <div class="profile">
+          <h3> Shanta Abbott </h3>
+          <h5> Executive Administrator </h5>
+          <img src="assets/teachers/abbott.jpg" id="pic_teach" alt="Picture of the Teacher Shanta Abbott ">
+          <p>
+            Shanta provides administrative business oversight for the company.
+            <br /> <br />
+            A more detailed future description will be avaliable later!
+          </p>
+        </div>
 
-  <p> Future Description </p>
+        <div class="profile">
+          <h3> Raelene Hanna </h3>
+          <h5> Office Administrator </h5>
+          </h5>
+          <img src="assets/teachers/rhanna.jpg" id="pic_teach" alt="Picture of the Teacher Raelene Hanna ">
+          <p>
+            Raelene handles day to day office dealings.
+            <br /> <br />
+            A more detailed future description will be avaliable later!
+          </p>
 
-</div>
+        </div>
 
-<div class="profile">
-  <h3> Sharon Kewish </h3>
-  <h5> Administrator Assistant </h5> </h5>
-  <img src="assets/teachers/kewish.jpg" id="pic_teach" alt="Picture of the Teacher Raelene Hanna ">
+        <div class="profile">
+          <h3> Sharon Kewish </h3>
+          <h5> Administrator Assistant </h5>
+          </h5>
+          <img src="assets/teachers/kewish.jpg" id="pic_teach" alt="Picture of the Teacher Raelene Hanna ">
+          <p>
+            Sharon supports the front office and acts as a point of contact for visitors.
+            <br /> <br />
+            A more detailed future description will be avaliable later!
+          </p>
 
-  <p> Future Description </p>
+        </div>
 
-</div>
+        <div class="profile">
+          <h3> Floriana Hanna </h3>
+          <h4> The Founding Principal </h4>
+          <img src="assets/teachers/fhanna.jpg" id="pic_teach" alt="Picture of the Teacher Floriana Hanna">
 
-<div class="profile">
-  <h3> Floriana Hanna </h3>
-  <h4> The Founding Principal </h4>
-  <img src="assets/teachers/fhanna.jpg" id="pic_teach" alt="Picture of the Teacher Floriana Hanna">
+          <p> It is my privilege to welcome you as the founder of Guiding Light Christian Educational Center. My dream
+            began in 1985 when I
+            developed our unique facility. To this day I continue to offer each student a quality education in a
+            spiritual environment.
+            Our program stresses academics in a warm & loving atmosphere giving each of our students a solid foundation
+            to enhance their education.
+            What a joy it is to have my alumni return to Guiding Light with their own children to give them the same
+            loving experience they
+            have learned to love. “Guiding Lake Havasu City’s Children Since 1985”. </p>
+        </div>
 
-  <p> It is my privilege to welcome you as the founder of Guiding Light Christian Educational Center.  My dream began in 1985 when I developed our unique facility. To this day I continue to offer each student a quality education in a spiritual environment. Our program stresses academics in a warm & loving atmosphere giving each of our students a solid foundation to enhance their education.
-What a joy it is to have my alumni return to Guiding Light with their own children to give them the same loving experience they have learned to love.
-“Guiding Lake Havasu City’s Children Since 1985”. </p>
-</div>
+      </div>
 
-</div>
+    </div>
 
-</div>
-
-    <!-- footer -->    <!-- footer -->    <!-- footer -->    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
+    <!-- footer -->
 
     <div class="footer_background">
       <div class="footer_wrapper" id="footermenu">
-      
-      <div class="footer_spacer"> </div>
-      
-      <div class="footer_box">
-      <p>
-      
-      <div class="footer_box_1">
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGuidingLightChristianEducationalCenter%2F&tabs=timeline&width=520&height=400&small
-      _header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId" width="500" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+        <div class="footer_spacer"> </div>
+
+        <div class="footer_box">
+          <p>
+
+          <div class="footer_box_1">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGuidingLightChristianEducationalCenter%2F&tabs=timeline&width=520&height=400&small
+      _header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId" width="500" height="320"
+              style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+              allow="encrypted-media"></iframe>
+          </div>
+
+          <div class="footer_box_2">
+            <h4 id="footer_header"> Real Testimonies </h4>
+            <div id="testimony_slideshow"> All quotes taken from handselected Facebook reviews. </div>
+            <div id="testimony_slideshow_bottom"> ~ L O A D I N G ~ </div>
+          </div>
+
+
+          <div class="footer_box_3">
+            <h4 id="footer_header"> From the Founder </h4>
+            My dream began in 1985 when I developed our unique facility. To this day I continue to offer each student a
+            quality education, which stresses academics in a warm spirtual atmosphere.
+            <br /> <br /> <br />
+            My kindest regards,
+            <br />
+            <img text-align"left" width="150px" src="assets/signature.png" alt="Founders signature">
+          </div>
+
+          </p>
+        </div>
+
+        <div class="footer_links">
+
+          <div style="padding-bottom:10px;" id="footer_header">More From Us </div>
+
+          <a id="footer_link" href="index.html"> Home </a>
+          |
+          <a id="footer_link" href="enroll.html"> Enroll </a>
+          |
+          <a id="footer_link" href="about_us.html"> About Us </a>
+          |
+          <a id="footer_link" href="parent_info.html"> Parent Info </a>
+          |
+          <a id="footer_link" href="https://www.facebook.com/GuidingLightChristianEducationalCenter/"> Facebook </a>
+          |
+          <a id="footer_link" href="donation.html"> Donation </a>
+          |
+          <a id="footer_link" href="scholarships.html"> Scholarships </a>
+          |
+          <a id="footer_link" href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light"> Az-DHS
+          </a>
+          |
+          <a id="footer_link" class="open_button" onclick="openForm_contact()"> Contact Us </a>
+
+        </div>
+
+        <div class="footer_bottom">
+          <p> &copy; GLCEC Org. All Rights Reserved 2020 | Created by Brentyn Hanna </p>
+        </div>
+
       </div>
-      
-      <div class="footer_box_2">
-      <h4 id="footer_header"> Real Testimonies </h4>
-        <div id="testimony_slideshow"> All quotes taken from handselected Facebook reviews. </div>
-        <div id="testimony_slideshow_bottom"> ~ L O A D I N G ~ </div>
-      </div>
-      
-      
-      <div class="footer_box_3">
-      <h4 id="footer_header"> From the Founder </h4>
-      My dream began in 1985 when I developed our unique facility. To this day I continue to offer each student a quality education, which stresses academics in a warm spirtual atmosphere.
-      <br /> <br /> <br />
-      My kindest regards,
-      <br />
-      <img text-align"left" width="150px" src="assets/signature.png" alt="Founders signature">
-      </div>
-      
-      </p>
-      </div>
-      
-      <div class="footer_links">
-      
-      <div style="padding-bottom:10px;" id="footer_header">More From Us </div>
-      
-      <a id="footer_link" href="index.html"> Home </a>
-      |
-      <a id="footer_link" href="enroll.html"> Enroll Now </a>
-      |
-      <a id="footer_link" href="about_us.html"> About Us </a>
-      |
-      <a id="footer_link" href="parent_info.html"> Parent Info </a>
-      |
-      <a id="footer_link" href="https://www.facebook.com/GuidingLightChristianEducationalCenter/"> Facebook </a>
-      |
-      <a id="footer_link" href="donation.html"> Donation </a>
-      |
-      <a id="footer_link" href="scholarships.html"> Scholarships </a>
-      |
-      <a id="footer_link" href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light"> Az-DHS </a>
-      |
-      <a id="footer_link" href=""> Contact Us </a>
-      
-      
-      
-      
-      
-      </div>
-      
-      <div class="footer_bottom">
-        <p> &copy; GLCEC Org. All Rights Reserved 2020 | Created by Brentyn Hanna </p>
-      </div>
-      
-      </div>
-      </div>
-      
-      </div>
-      </body>
-      </html>
-      
+    </div>
+
+  </div>
+</body>
+
+</html>

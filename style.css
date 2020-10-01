@@ -92,6 +92,28 @@ li {
   -moz-box-shadow: 4px 4px 14px #000;
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
+  text-align:center;
+  font-family:"Raleway", Arial;
+}
+
+.enroll-form-popup {
+  display: none;
+  position: fixed;
+  top:5%;
+  left:50%;
+  margin-left: -112px;
+  background-color:white;
+  width:250px;
+  padding: 20px;
+  z-index: 9;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+  overflow:auto;
+  height:500px;
 }
 
 .private_form {
@@ -163,7 +185,6 @@ body {
   font-family:"pageHeader", "Raleway", Arial;
   text-align:left;
 }
-
 
 .header{
   width:1280px;
@@ -327,6 +348,14 @@ body {
   padding-top: 80px;
 }
 
+#intro_top {
+  text-align: left;
+}
+
+#intro_bot {
+  text-align: right;
+}
+
 #pic_1 {
   height:auto;
   width:420px;
@@ -381,8 +410,9 @@ body {
 }
 
 #pic_teach {
-  height:auto;
+  height:300px;
   float: center;
+  margin: 20px;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
@@ -392,7 +422,7 @@ body {
 }
 
 .profile {
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .footer_background {
