@@ -1299,3 +1299,20 @@ body {
     }
 
 }
+
+/* styling fix for mozilla */
+@-moz-document url-prefix() {
+
+  @media screen and (min-width:1251px) { 
+    .footer_box_3 {
+      font-size:17px;
+    }
+  }
+
+  @media screen and (max-width:800px) { 
+  .footer_box_3 {
+    font-size:13px;
+  }
+}
+  
+}
