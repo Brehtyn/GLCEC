@@ -680,6 +680,7 @@ body {
     text-align:center;
     list-style-type: none;
     text-decoration: none;
+    background-size: 10rem;
   }
 
   .drop {
@@ -1049,6 +1050,7 @@ body {
       text-align:center;
       list-style-type: none;
       text-decoration: none;
+      background-size: 7em;
     }
 
     .drop {
