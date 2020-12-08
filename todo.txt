@@ -1,0 +1,26 @@
+ ~~~~~~~~~~~~ General ~~~~~~~~~~~~ 
+
+- contact us / enroll / complaint form (Office EmaiL: SHANTA@GLCEC.ORG)
+- google validate
+- implement brennas links
+- partialize header, nav, footer
+- fix reviews timer code
+- give header banner bubble selections
+- on mobile, code/photoshop footer facebook
+
+ ~~~~~~~~~~~~ About Us ~~~~~~~~~
+
+- sharons pic
+- teacher messages
+- code/photoshop photogallery 
+
+ ~~~~~~~~~~~ Enrollment Services ~~~~~~~~~
+
+- style program outline
+- change gender to a textbox
+- pdf and change starting checklist
+- move emergency file notice below checklist
+
+
+
+- *final approval*
