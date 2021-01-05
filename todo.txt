@@ -7,6 +7,7 @@
 - fix reviews timer code
 - give header banner bubble selections
 - on mobile, code/photoshop footer facebook
+- FIX RHONDA F. REVIEW ( put on all pages )
 
  ~~~~~~~~~~~~ About Us ~~~~~~~~~
 
