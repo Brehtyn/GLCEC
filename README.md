@@ -32,12 +32,13 @@ This project is purchased & used primarily by the following company(s):
 - Facebook integration for instant-feed updates
 - Placard tree for donations
 
-  
+
 ## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [Awesome Readme Template Building](https://https://readme.so/)
+ - [Free Photoeditor](https://www.photopea.com/)
+ - Graphic Artist: [Brenn](https://www.instagram.com/night.of.the.living.brenn/)
+
 
   
 ## License
