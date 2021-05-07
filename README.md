@@ -66,8 +66,9 @@ Download via git/GithubDesktop/zip
 Thats it! Open your desired html page in any browser to view contents.
 ## Feedback
 
-If you have any feedback, please reach out to us at brent.hanna@gmail.com 
-w/ a subject line such as GLCEC FEEDBACK
+If you have any feedback whatsoever, please reach out to me w/ <3 only 
+at brent.hanna@gmail.com
+w/ a subject line such as GLCEC FEEDBACK.
 
 Thank You!
 
