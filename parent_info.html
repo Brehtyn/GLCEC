@@ -144,12 +144,12 @@
     }
 
     function validateForm_private() {
-      var x = document.forms["privateForm"]["private_name"].value;
+      var x = document.forms["privatecontactform"]["private_name"].value;
       if (x == "") {
         alert("Please provide some sort of name or alias.");
         return false;
       }
-      var y = document.forms["privateForm"]["private_message"].value;
+      var y = document.forms["privatecontactform"]["private_message"].value;
       if (y == "") {
         alert("Please include your question or details of your complaint.");
         return false;
