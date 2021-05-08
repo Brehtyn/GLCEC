@@ -186,9 +186,31 @@
         <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" width="18"
             alt="call phone" align="top"> (928) 855-1022 </a>
         &nbsp &nbsp &nbsp &nbsp
-        <a href="mailto:name@fixlater.com?subject=Contact%20Us%20Request%20From%20Homepage"
-          style="text-decoration:none;"> <img src="assets/mail.png" width="20" alt="go to donation" align="top"> Contact
-          Us</a>
+        <a class="open_button" style="text-decoration:none;" onclick="openForm_contact()"> <img src="assets/mail.png"
+            width="20" alt="go to donation" align="top"> Contact Us</a>
+
+        <div class="form-popup" id="contactForm">
+          <form name="generalcontactform" method="post" class="form-container" action="contactForm.php">
+
+            Name:
+            <input type="text" class="private_form" name="name" placeholder="Joey Doe">
+
+            Phone Number:
+            <input type="tel" class="private_form" name="phone" placeholder="(928)123-1234">
+
+            Email:
+            <input type="email" class="private_form" name="email" placeholder="example@email.com">
+
+            Comment(s):
+            <textarea type="text" class="private_form" name="message" placeholder=""> </textarea>
+
+            <button type="submit" class="btn" value="Send Form" onclick="return validateForm()"> Submit </button>
+            <button class="btn_cancel" onclick="closeForm()">Close</button>
+
+          </form>
+        </div>
+        <div class="form-background" id="backgroundForm"></div>
+
         </p>
       </div>
 
@@ -288,21 +310,21 @@
         private question please <a class="open_button" onclick="openForm_private()"> click here. </a>
 
         <div class="form-popup" id="privateForm">
-          <form name="privateForm" method="post" class="form-container" action="privateForm.php">
+          <form name="privatecontactform" method="post" class="form-container" action="privateForm.php">
 
             Name:
-            <input type="text" class="private_form" name="private_name" placeholder="John Doe">
+            <input type="text" class="private_form" name="private_name" placeholder="optional">
 
             Phone Number:
-            <input type="tel" class="private_form" name="" placeholder="(928) 000 - 0000">
+            <input type="tel" class="private_form" name="private_phone" placeholder="optional">
 
             Email:
-            <input type="email" class="private_form" name="" placeholder="example@email.com">
+            <input type="email" class="private_form" name="private_email" placeholder="optional">
 
-            Issue:
-            <input type="text" class="private_form" name="complaint" placeholder="What is the issue? ">
+            Cocerns(s):
+            <textarea type="text" class="private_form" name="private_message" placeholder="What is the issue?"> </textarea>
 
-            <button type="submit" class="btn" onclick="return validateForm_private()">Submit</button>
+            <button type="submit" class="btn" value="Send Form" onclick="return validateForm_private()"> Submit </button>
             <button class="btn_cancel" onclick="closeForm()">Close</button>
 
           </form>

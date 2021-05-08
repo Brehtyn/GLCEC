@@ -173,9 +173,31 @@
         <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" width="18"
             alt="call phone" align="top"> (928) 855-1022 </a>
         &nbsp &nbsp &nbsp &nbsp
-        <a href="mailto:name@fixlater.com?subject=Contact%20Us%20Request%20From%20Homepage"
-          style="text-decoration:none;"> <img src="assets/mail.png" width="20" alt="go to donation" align="top"> Contact
-          Us</a>
+        <a class="open_button" style="text-decoration:none;" onclick="openForm_contact()"> <img src="assets/mail.png"
+            width="20" alt="go to donation" align="top"> Contact Us</a>
+
+        <div class="form-popup" id="contactForm">
+          <form name="generalcontactform" method="post" class="form-container" action="contactForm.php">
+
+            Name:
+            <input type="text" class="private_form" name="name" placeholder="Joey Doe">
+
+            Phone Number:
+            <input type="tel" class="private_form" name="phone" placeholder="(928)123-1234">
+
+            Email:
+            <input type="email" class="private_form" name="email" placeholder="example@email.com">
+
+            Comment(s):
+            <textarea type="text" class="private_form" name="message" placeholder=""> </textarea>
+
+            <button type="submit" class="btn" value="Send Form" onclick="return validateForm()"> Submit </button>
+            <button class="btn_cancel" onclick="closeForm()">Close</button>
+
+          </form>
+        </div>
+        <div class="form-background" id="backgroundForm"></div>
+
         </p>
       </div>
 
