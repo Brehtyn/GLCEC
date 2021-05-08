@@ -176,7 +176,7 @@
             width="20" alt="go to donation" align="top"> Contact Us</a>
 
         <div class="form-popup" id="contactForm">
-          <form name="contactForm" method="post" class="form-container" action="contactForm.php">
+          <form name="generalcontactform" method="post" class="form-container" action="contactForm.php">
 
             Name:
             <input type="text" class="private_form" name="name" placeholder="John Doe">
@@ -188,9 +188,9 @@
             <input type="email" class="private_form" name="email" placeholder="example@email.com">
 
             Comment(s):
-            <input type="text" class="private_form" name="comments" placeholder="">
+            <textarea type="text" class="private_form" name="comments" placeholder=""> </textarea>
 
-            <button type="submit" class="btn" onclick="return validateForm()"> Submit </button>
+            <button type="submit" class="btn" value="Send Form" onclick="return validateForm()"> Submit </button>
             <button class="btn_cancel" onclick="closeForm()">Close</button>
 
           </form>

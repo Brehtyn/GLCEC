@@ -1,15 +1,22 @@
 <?php
 
 $name = $_POST['name'];
+$phone = $_POST['phone'];
 $visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$comments = $_POST['comments'];
 
-  $to = "brent.hanna@gmail.com";
+$email_from = "brent.hanna@gmail.com";
 
-  $headers = "From: $email_from \r\n";
+$to = "brent.hanna@gmail.com";
 
-  $headers .= "Reply-To: $visitor_email \r\n";
+$email_subject = "Contact Form from GLCEC.org";
 
-  mail($to,$email_subject,$email_body,$headers);
+$headers = "From: $email_from \r\n";
 
- ?>
+$headers .= "Reply-To: $visitor_email \r\n";
+
+$email_body = "You have received a new message from the user $name, here is the message:\n $comments".
+
+mail($to,$email_subject,$email_body,$headers);
+
+?>
