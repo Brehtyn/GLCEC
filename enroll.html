@@ -464,15 +464,15 @@
         <a class="open_button" onclick="openForm_enroll()"> please click here </a>
 
         <div class="enroll-form-popup" id="enrollForm">
-          <form name="enrollForm" method="post" class="form-container" action="enrollForm.php">
+          <form name="enrollcontactform" method="post" class="form-container" action="enrollForm.php">
 
             <p> Child's Information </p>
 
             Name:
-            <input type="text" class="private_form" name="child_name" placeholder="Jane Doe">
+            <input type="text" class="private_form" name="child_name" placeholder="Baby Doe">
             <br />
             Birth Date:
-            <input type="date" class="private_form" name="child_birthdate" placeholder="01/01/2020">
+            <input type="date" class="private_form" name="child_birthdate" placeholder="01/01/2015">
 
             <br />
 
@@ -491,10 +491,10 @@
             <input type="text" class="private_form" name="name" placeholder="John Doe">
             <br />
             Phone Number:
-            <input type="tel" class="private_form" name="phone" placeholder="(928) 000 - 0000">
+            <input type="tel" class="private_form" name="phone" placeholder="(928) 000-0000">
             <br />
             Work:
-            <input type="tel" class="private_form" name="" placeholder="(928) 000 - 0000">
+            <input type="tel" class="private_form" name="work_phone" placeholder="(928) 000-0000">
             <br />
             Email:
             <input type="email" class="private_form" name="email" placeholder="example@email.com">
@@ -506,9 +506,9 @@
             <input type="date" class="private_form" name="date_needed" placeholder="01/01/2020">
             <br />
             Referred By:
-            <input type="text" class="private_form" name="" placeholder=" so & so sent me here ">
+            <input type="text" class="private_form" name="referral" placeholder="name, website, or company">
 
-            <button type="submit" class="btn" onclick="return validateForm_enroll()">Submit</button>
+            <button type="submit" class="btn" value="Send Form" onclick="return validateForm_enroll()">Submit</button>
             <button class="btn_cancel" onclick="closeForm()">Close</button>
 
           </form>

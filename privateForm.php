@@ -9,7 +9,7 @@ $email_from = "admin@glcec.org";
 
 $to = "brent.hanna@gmail.com";
 
-$email_subject = "Contact Form from GLCEC.org";
+$email_subject = "Private Form from GLCEC.org";
 
 $headers = "From: $email_from \r\n";
 
