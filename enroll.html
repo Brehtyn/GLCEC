@@ -120,22 +120,22 @@
     }
 
     function validateForm() {
-      var j = document.forms["contactForm"]["name"].value;
+      var j = document.forms["generalcontactform"]["name"].value;
       if (j == "") {
         alert("Please provide your name.");
         return false;
       }
-      var k = document.forms["contactForm"]["phone"].value;
+      var k = document.forms["generalcontactform"]["phone"].value;
       if (k == "") {
         alert("Please provide your phone number.");
         return false;
       }
-      var k = document.forms["contactForm"]["email"].value;
+      var k = document.forms["generalcontactform"]["email"].value;
       if (k == "") {
         alert("Please provide your email address.");
         return false;
       }
-      var k = document.forms["contactForm"]["comments"].value;
+      var k = document.forms["generalcontactform"]["comments"].value;
       if (k == "") {
         alert("Please include your desired comment.");
         return false;
@@ -143,42 +143,42 @@
     }
 
     function validateForm_enroll() {
-      var a = document.forms["enrollForm"]["child_name"].value;
+      var a = document.forms["enrollcontactform"]["child_name"].value;
       if (a == "") {
         alert("Please provide your child's full name.");
         return false;
       }
-      var b = document.forms["enrollForm"]["child_birthdate"].value;
+      var b = document.forms["enrollcontactform"]["child_birthdate"].value;
       if (b == "") {
         alert("Please provide your child's birthday.");
         return false;
       }
-      var c = document.forms["enrollForm"]["child_pt"].value;
+      var c = document.forms["enrollcontactform"]["child_pt"].value;
       if (c == "") {
         alert("Please select if your child is potty trained or not.");
         return false;
       }
-      var d = document.forms["enrollForm"]["name"].value;
+      var d = document.forms["enrollcontactform"]["name"].value;
       if (d == "") {
         alert("Please provide your full legal name.");
         return false;
       }
-      var e = document.forms["enrollForm"]["phone"].value;
+      var e = document.forms["enrollcontactform"]["phone"].value;
       if (e == "") {
         alert("Please provide your phone number.");
         return false;
       }
-      var f = document.forms["enrollForm"]["email"].value;
+      var f = document.forms["enrollcontactform"]["email"].value;
       if (f == "") {
         alert("Please provide your email address.");
         return false;
       }
-      var g = document.forms["enrollForm"]["program"].value;
+      var g = document.forms["enrollcontactform"]["program"].value;
       if (g == "") {
         alert("Please provide what program interests you.");
         return false;
       }
-      var h = document.forms["enrollForm"]["date_needed"].value;
+      var h = document.forms["enrollcontactform"]["date_needed"].value;
       if (h == "") {
         alert("Please provide what date you'd like to enroll by.");
         return false;
