@@ -10,6 +10,7 @@ $visitor_email = $_POST['email'];
 $program = $_POST['program'];
 $date_needed = $_POST['date_needed'];
 $referral = $_POST['referral'];
+$url='https://www.glcec.org/';
 
 $email_from = "admin@glcec.org";
 
@@ -33,5 +34,7 @@ $email_body = "You have received a new message from $name.
 \r\n Here is their referral: \r\n $referral";
 
 mail($to,$email_subject,$email_body,$headers);
+
+echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
 
 ?>
