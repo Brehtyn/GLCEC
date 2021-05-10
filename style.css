@@ -130,6 +130,8 @@ li {
   width: 40%;
   margin-top:20px;
   opacity: 0.8;
+  font-weight: normal;
+  font-family: inherit;
 }
 
 .btn_cancel {
@@ -141,6 +143,14 @@ li {
   cursor: pointer;
   width: 40%;
   opacity: 0.8;
+  font-weight: normal;
+  font-family: inherit;
+  font-size:14px;
+  text-decoration: none;
+}
+
+.btn:hover,btn_cancel:hover {
+  color:black !important;
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  PC Viewing  ~~~~~~~~~~~~~~~~~~~~~~~  */
