@@ -10,7 +10,7 @@ $visitor_email = $_POST['email'];
 $program = $_POST['program'];
 $date_needed = $_POST['date_needed'];
 $referral = $_POST['referral'];
-$url='https://www.glcec.org/';
+$url='https://www.glcec.org/index.html';
 
 $email_from = "admin@glcec.org";
 
@@ -36,5 +36,11 @@ $email_body = "You have received a new message from $name.
 mail($to,$email_subject,$email_body,$headers);
 
 echo '<META HTTP-EQUIV=REFRESH CONTENT="1; '.$url.'">';
+
+echo "<h1> FORM SENT SUCCESS! </h1>";
+
+echo "Thank you " .$name. ", if your browser doesnt automatically redirect you please ";
+
+echo "<a href='".$url."'>CLICKHERE.</a>";
 
 ?>
