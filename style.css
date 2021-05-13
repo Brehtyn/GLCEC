@@ -985,10 +985,10 @@ body {
 
     .link_mobile_button {
       position: fixed;
+      right: 35px;
+      top: 35px;
       height:40px;
       width:70px;
-      margin-top:10px;
-      margin-left:60vw;
       border-radius:20px;
       border-color: black;
       background-image: linear-gradient(to left bottom, #deff00, #e6ef1d, #eae02e, #ebd13d, #e8c349, #e5c253, #e1c05c, #debf65, #dcc870, #dbd17c, #dad989, #d9e196);
@@ -1007,6 +1007,7 @@ body {
       font-family:"Raleway", Arial;
       font-weight:bold;
       position: fixed;
+      margin:0;
     }
 
     .link_menu{
@@ -1015,7 +1016,7 @@ body {
       z-index: 2;
       position:fixed;
       padding-top:20px;
-      border-radius: 10px;
+      border-radius:10px;
       margin-top:20px;
     }
 
