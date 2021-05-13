@@ -26,6 +26,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <!--  Body  -->
@@ -37,10 +38,11 @@
   <script>
     var distance;
     var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)"];   // initiate slideshow
-    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'","'25 years ago, my children went there and now my grandchildren go there ... one of the biggest blessings in our lives here in L.H.C. for many many years. Love you!'"];
-    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C.", " - Rhonda F."];
+    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
+    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."];
     var links = ["index.html", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
-    var i = 0;
+    var i = 0; //header slideshow picture counter
+    var toggle = 0 // mobile navbar toggle variable
 
     window.onbeforeunload = function () {                                     // scroll to top
       window.scrollTo(0, 0);
@@ -94,8 +96,7 @@
       setTimeout("advance()", 15000);
       setTimeout("advance()", 20000);
       setTimeout("advance()", 25000);
-      setTimeout("advance()", 30000);
-      setTimeout("time()", 35000);
+      setTimeout("time()", 30000);
     }
 
     function openForm_contact() {
@@ -111,6 +112,17 @@
     function openForm_enroll() {
       document.getElementById("enrollForm").style.display = "block";
       document.getElementById("backgroundForm").style.display = "block";
+    }
+
+    function openNavBar() {
+      if (toggle == 0) {
+      document.getElementById("link_menu").style.display = "block";
+      toggle++;
+      }
+      else {
+      document.getElementById("link_menu").style.display = "none";  
+      toggle--;
+      }
     }
 
     function closeForm() {
@@ -143,19 +155,6 @@
       }
     }
 
-    function validateForm_private() {
-      var x = document.forms["privatecontactform"]["private_name"].value;
-      if (x == "") {
-        alert("Please provide some sort of name or alias.");
-        return false;
-      }
-      var y = document.forms["privatecontactform"]["private_message"].value;
-      if (y == "") {
-        alert("Please include your question or details of your complaint.");
-        return false;
-      }
-    }
-
   </script>
 
   <script async defer crossorigin="anonymous"
@@ -163,6 +162,8 @@
 
   <div class="background">
     <div class="wrapper">
+
+      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu" data-inline="false"></span> </button>
 
       <!-- banners -->
       <!-- banners -->
@@ -230,10 +231,10 @@
 
       <div class="link_wrapper">
         <div id="link_menu" class="link_menu">
-          <div class="link" id="l_link"> <a class="link" href="index.html"> Home </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="about_us.html"> About Us </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
+          <div class="link"> <a class="link" href="index.html"> Home </a> </div>
+          <div class="link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
+          <div class="link"> <a class="link" href="about_us.html"> About Us </a> </div>
+          <div class="link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
           <div class="link" id="drop_button"> <a class="link"> Useful Links </a>
             <div class="drop">
               <div class="drop_link"> <a
@@ -268,7 +269,7 @@
 
         <p>
 
-          Last Updated : 05 / 08 / 2021
+          Page Updated : 05 / 13 / 2021
 
           <br /> <br /> <br />
           Our fax number is 928-855-3291. 
@@ -276,9 +277,8 @@
           For complaints, scroll to the bottom of the page. 
           <br /> <br />
           <img id="pic_2" src="assets/services.jpg" width="60%" alt="kids playing together">
-          <br /> <br />
-          Below is information regarding upcoming public events and snack schedules.
-          <br /> <br /> <br /> <br />
+
+          <div class="spacer"></div>
 
         <h2> Snack Schedule </h2>
 
@@ -313,7 +313,7 @@
           <form name="privatecontactform" method="post" class="form-container" action="privateForm.php">
 
             Name:
-            <input type="text" class="private_form" name="private_name" placeholder="optional">
+            <input type="text" class="private_form" name="private_name" placeholder="alias">
 
             Phone Number:
             <input type="tel" class="private_form" name="private_phone" placeholder="optional">

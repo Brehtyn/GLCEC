@@ -26,6 +26,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <!--  Body  -->
@@ -40,7 +41,8 @@
     var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
     var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."];
     var links = ["index.html", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
-    var i = 0;
+    var i = 0; //header slideshow picture counter
+    var toggle = 0 // mobile navbar toggle variable
 
     window.onbeforeunload = function () {                                     // scroll to top
       window.scrollTo(0, 0);
@@ -112,6 +114,17 @@
       document.getElementById("backgroundForm").style.display = "block";
     }
 
+    function openNavBar() {
+      if (toggle == 0) {
+      document.getElementById("link_menu").style.display = "block";
+      toggle++;
+      }
+      else {
+      document.getElementById("link_menu").style.display = "none";  
+      toggle--;
+      }
+    }
+
     function closeForm() {
       document.getElementById("privateForm").style.display = "none";
       document.getElementById("enrollForm").style.display = "none";
@@ -142,50 +155,6 @@
       }
     }
 
-    function validateForm_enroll() {
-      var a = document.forms["enrollcontactform"]["child_name"].value;
-      if (a == "") {
-        alert("Please provide your child's full name.");
-        return false;
-      }
-      var b = document.forms["enrollcontactform"]["child_birthdate"].value;
-      if (b == "") {
-        alert("Please provide your child's birthday.");
-        return false;
-      }
-      var c = document.forms["enrollcontactform"]["child_pt"].value;
-      if (c == "") {
-        alert("Please select if your child is potty trained or not.");
-        return false;
-      }
-      var d = document.forms["enrollcontactform"]["name"].value;
-      if (d == "") {
-        alert("Please provide your full legal name.");
-        return false;
-      }
-      var e = document.forms["enrollcontactform"]["phone"].value;
-      if (e == "") {
-        alert("Please provide your phone number.");
-        return false;
-      }
-      var f = document.forms["enrollcontactform"]["email"].value;
-      if (f == "") {
-        alert("Please provide your email address.");
-        return false;
-      }
-      var g = document.forms["enrollcontactform"]["program"].value;
-      if (g == "") {
-        alert("Please provide what program interests you.");
-        return false;
-      }
-      var h = document.forms["enrollcontactform"]["date_needed"].value;
-      if (h == "") {
-        alert("Please provide what date you'd like to enroll by.");
-        return false;
-      }
-
-    }
-
   </script>
 
   <script async defer crossorigin="anonymous"
@@ -193,6 +162,8 @@
 
   <div class="background">
     <div class="wrapper">
+
+      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu" data-inline="false"></span> </button>
 
       <!-- banners -->
       <!-- banners -->
@@ -259,10 +230,10 @@
 
       <div class="link_wrapper">
         <div id="link_menu" class="link_menu">
-          <div class="link" id="l_link"> <a class="link" href="index.html"> Home </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="about_us.html"> About Us </a> </div>
-          <div class="link" id="c_link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
+          <div class="link"> <a class="link" href="index.html"> Home </a> </div>
+          <div class="link"> <a class="link" href="enroll.html"> Enroll Now </a> </div>
+          <div class="link"> <a class="link" href="about_us.html"> About Us </a> </div>
+          <div class="link"> <a class="link" href="parent_info.html"> Parent Info </a> </div>
           <div class="link" id="drop_button"> <a class="link"> Useful Links </a>
             <div class="drop">
               <div class="drop_link"> <a

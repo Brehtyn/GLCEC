@@ -155,7 +155,7 @@ li {
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  PC Viewing  ~~~~~~~~~~~~~~~~~~~~~~~  */
 
-@media screen and (min-width:1251px) {
+@media screen and (min-width:1250.5px) {
 
 body {
   background-image: url(assets/bg.png);
@@ -200,6 +200,7 @@ body {
   width:1280px;
   height:380px;
   float:left;
+  padding-bottom:27px;
 }
 
 .spacer {
@@ -261,47 +262,41 @@ body {
   background-image: url(assets/r_arrow_hover.png);
 }
 
-.link_wrapper{
+.link_mobile_button {
+  display:none;
+}
+
+.link_wrapper {
   width:100%;
-  height:75px;
-  float:left;
-  padding-top:60px;
+  height:10px;
   font-family:"Raleway", Arial;
-  font-size:16px;
   font-weight:bold;
-  padding-left:40px;
+  max-width:1100px;
+  margin: 0 auto;
 }
 
-.link_menu{
-  width:100%;
-  height:75px;
-  float:left;
+.link_menu {
+  width:inherit;
+  max-width: inherit;
+  align-items: center;
+  background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
+  display: flex;
+  margin-left:-10px;
+  height:65px;
+  border-radius:0 0 20px 20px !important;
 }
 
-#link_menu{}
+#link_menu {
+}
 
-#l_link{
-  background-image: url(assets/l_links.png);
-  background-repeat:repeat-x;
-  background-position:center;
-}
-#c_link{
-  background-image: url(assets/links.png);
-  background-repeat:repeat-x;
-  background-position:center;
-}
 #drop_button {
-  background-image: url(assets/r_links.png);
-  background-repeat:repeat-x;
-  background-position:center;
 }
 
 .link {
-  height:70px;
-  width:240px;
-  float:left;
-  padding-top:19px;
-  text-align:center;
+  height:100%;
+  padding-top:50px;
+  vertical-align: bottom;
+  margin: 0 auto;
   list-style-type: none;
   text-decoration: none;
 }
@@ -310,28 +305,20 @@ body {
   display:none;
   position:absolute;
   width:150px;
-  height:40px;
-  padding-top:54px;
+  height:max-content;
+  border-radius: 20px;
+  background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
+  align-content: center;
+  padding:20px;
+  margin-left:-50px
 }
 
 .drop_link {
-  height:38px;
-  width:240px;
-  text-align: center;
-  float:left;
   list-style-type: none;
   text-decoration: none;
-  background-color: white;
-  background-repeat:repeat-x;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  -moz-box-shadow: 4px 4px 11px #000;
-  -webkit-box-shadow: 4px 4px 11px #000;
-  box-shadow: 4px 4px 11px #000;
-  background-position:center;
-  margin-bottom: 6px;
-  padding-bottom: 9px;
+  padding:1.2em;
+  font-size:11px;
+  text-align: center;
 }
 
 #drop_button:hover .drop {
@@ -355,7 +342,7 @@ body {
   line-height: 32px;
   text-align:center;
   font-family:"Raleway", Arial;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 #intro_top {
@@ -575,7 +562,7 @@ body {
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  Tablet Viewing  ~~~~~~~~~~~~~~~~~~~~~~~  */
 
-@media screen and (max-width: 1250px) and (min-width: 801px)
+@media screen and (max-width: 1250px) and (min-width: 800.5px)
 
  {
 
@@ -587,8 +574,8 @@ body {
   }
 
   .background {
+    width:100%;
     font-family:"pageHeader", "Raleway", Arial;
-
   }
 
   .wrapper {
@@ -643,83 +630,65 @@ body {
   #pic_right:hover {
   }
 
+  .link_mobile_button {
+    display:none;
+  }
+
   .link_wrapper {
     width:100%;
-    height:75px;
-    float:left;
-    padding-top:120px;
+    height:100%;
+    padding-top:95px;
     font-family:"Raleway", Arial;
     font-weight:bold;
-    padding-left: 10px;
+    max-width:700px;
+    margin: 0 auto;
+    
   }
 
   .link_menu {
-    width:100%;
-    height:75px;
-    float:left;
+    width:inherit;
+    max-width: inherit;
+    align-items: center;
+    background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
+    display: flex;
+    margin-left:-10px;
+    height:65px;
+    border-radius:0 0 20px 20px !important;
   }
 
   #link_menu {
-
   }
 
-  #l_link {
-    background-image: url(assets/l_links.png);
-    background-repeat:repeat-x;
-    background-position:center;
-    font-size:15px;
-  }
-  #c_link {
-    background-image: url(assets/links.png);
-    background-repeat:repeat-x;
-    background-position:center;
-    font-size:15px;
-  }
   #drop_button {
-    background-image: url(assets/r_links.png);
-    background-repeat:repeat-x;
-    background-position:center;
-    font-size:15px;
   }
 
   .link {
-    height:70px;
-    width:155px;
-    float:left;
-    padding-top:19px;
-    text-align:center;
+    height:100%;
+    padding-top:50px;
+    vertical-align: bottom;
+    margin: 0 auto;
     list-style-type: none;
     text-decoration: none;
-    background-size: 10rem;
   }
 
   .drop {
     display:none;
     position:absolute;
     width:150px;
-    height:40px;
-    padding-top:54px;
+    height:max-content;
+    border-radius: 20px;
+    background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
+    align-content: center;
+    padding:20px;
+    margin-left:-50px
   }
 
   .drop_link {
-    height:38px;
-    width:155px;
-    text-align: center;
-    float:left;
     list-style-type: none;
     text-decoration: none;
-    background-color: white;
-    background-repeat:repeat-x;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    -moz-box-shadow: 4px 4px 11px #000;
-    -webkit-box-shadow: 4px 4px 11px #000;
-    box-shadow: 4px 4px 11px #000;
-    background-position:center;
-    margin-bottom: 6px;
-    padding-bottom: 9px;
+    padding:1.2em;
     font-size:11px;
+    text-align: center;
   }
 
   #drop_button:hover .drop{
@@ -736,14 +705,12 @@ body {
 
   .content_box {
     width:600px;
-    margin-left:90px;
-    margin-right:90px;
+    margin: 50px 90px 0 90px;
     float:left;
     font-size:22px;
     line-height: 32px;
     text-align:center;
     font-family:"Raleway", Arial;
-    padding-top: 80px;
   }
 
   #pic_1 {
@@ -977,7 +944,7 @@ body {
       font-weight:bold;
       font-size:16px;
       font-family:"pageHeader", "Raleway", Arial;
-      text-align:center;
+      text-align:left;
     }
 
     .banner_r {
@@ -987,7 +954,7 @@ body {
       float:center;
       font-size:16px;
       font-family:"pageHeader", "Raleway", Arial;
-      text-align:center;
+      text-align:left;
     }
 
     .header {
@@ -1016,80 +983,72 @@ body {
     #pic_right:hover {
     }
 
+    .link_mobile_button {
+      position: fixed;
+      height:40px;
+      width:70px;
+      margin-top:10px;
+      margin-left:60vw;
+      border-radius:20px;
+      border-color: black;
+      background-image: linear-gradient(to left bottom, #deff00, #e6ef1d, #eae02e, #ebd13d, #e8c349, #e5c253, #e1c05c, #debf65, #dcc870, #dbd17c, #dad989, #d9e196);
+      z-index: 1;
+    }
+    .link_mobile_button:hover {
+      color:white;
+    }
+    .link_mobile_button:active {
+      opacity: .6;
+    }
+
     .link_wrapper{
       width:100%;
-      height:75px;
-      float:left;
-      padding-top:80px;
+      height:max-content;
       font-family:"Raleway", Arial;
       font-weight:bold;
+      position: fixed;
     }
 
     .link_menu{
-      width:100%;
-      height:75px;
-      float:left;
+      display:none;
+      background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
+      z-index: 2;
+      position:fixed;
+      padding-top:20px;
+      border-radius: 10px;
+      margin-top:20px;
     }
 
     #link_menu{}
 
-    #l_link{
-      background-image: url(assets/l_links.png);
-      background-repeat:repeat-x;
-      background-position:center;
-      font-size:11px;
-    }
-    #c_link{
-      background-image: url(assets/links.png);
-      background-repeat:repeat-x;
-      background-position:center;
-      font-size:11px;
-    }
     #drop_button {
-      background-image: url(assets/r_links.png);
-      background-repeat:repeat-x;
-      background-position:center;
-      font-size:11px;
     }
 
     .link {
-      height:70px;
-      width:70px;
+      height:40px;
+      width:100%;
       float:left;
-      padding-top:19px;
       text-align:center;
       list-style-type: none;
       text-decoration: none;
-      background-size: 7em;
     }
 
     .drop {
       display:none;
       position:absolute;
-      width:70px;
-      height:40px;
-      padding-top:54px;
+      width:100%;
+      height:max-content;
+      border-radius: 10px;
+      background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
     }
 
     .drop_link {
-      height:38px;
-      width:70px;
-      text-align: center;
+      height:40px;
+      width:100%;
       float:left;
+      text-align:center;
       list-style-type: none;
       text-decoration: none;
-      background-color: white;
-      background-repeat:repeat-x;
-      -moz-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      border-radius: 8px;
-      -moz-box-shadow: 4px 4px 11px #000;
-      -webkit-box-shadow: 4px 4px 11px #000;
-      box-shadow: 4px 4px 11px #000;
-      background-position:center;
-      margin-bottom: 6px;
-      padding-bottom: 9px;
-        font-size:9px;
     }
 
     #drop_button:hover .drop{
@@ -1106,14 +1065,12 @@ body {
 
     .content_box {
       width:340px;
-      margin-left:10px;
-      margin-right:10px;
+      margin:100px 10px 0 10px;
       float:left;
       font-size:20px;
       line-height: 32px;
       text-align:center;
       font-family:"Raleway", Arial;
-      padding-top: 80px;
     }
 
     #pic_1 {
