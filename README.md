@@ -33,6 +33,13 @@ This project is purchased & used primarily by the following company(s):
 - Placard tree for donations
 
 
+
+## Tech Stack
+
+HTML/CSS/JS
+
+
+
 ## Acknowledgements
 
  - [Awesome Readme Template Building](https://https://readme.so/)
