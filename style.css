@@ -196,6 +196,10 @@ body {
   text-align:left;
 }
 
+#banner_item {
+  width:20;
+}
+
 .header{
   width:1280px;
   height:380px;
@@ -603,6 +607,9 @@ body {
     text-align: center;
   }
 
+  #banner_item {
+    width:20;
+  }
 
   .header{
     display: none;
@@ -949,7 +956,7 @@ body {
       margin-top:1px;
       width:30px;
     }
-    
+
     .header {
       display: none;
     }
