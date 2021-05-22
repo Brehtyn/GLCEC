@@ -936,27 +936,19 @@ body {
       display: none;
     }
 
-    .banner_l {
-      width:100%;
-      height:30px;
-      margin-top:-10px;
-      float:center;
-      font-weight:bold;
-      font-size:16px;
-      font-family:"pageHeader", "Raleway", Arial;
+    .banner_l, .banner_r {
+      height:60px;
+      vertical-align: center;
+      float:left;
+      font-size: 0;
       text-align:left;
     }
-
-    .banner_r {
-      width:100%;
-      height:30px;
-      font-weight:bold;
-      float:center;
-      font-size:16px;
-      font-family:"pageHeader", "Raleway", Arial;
-      text-align:left;
+    
+    #banner_item {
+      padding:9px;
+      margin-top:1px;
+      width:30px;
     }
-
     .header {
       display: none;
     }
@@ -986,7 +978,7 @@ body {
     .link_mobile_button {
       position: fixed;
       right: 35px;
-      top: 35px;
+      top: 20px;
       height:40px;
       width:70px;
       border-radius:20px;
@@ -1002,7 +994,7 @@ body {
     }
 
     .link_wrapper{
-      width:100%;
+      width:98%;
       height:max-content;
       font-family:"Raleway", Arial;
       font-weight:bold;
