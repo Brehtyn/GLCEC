@@ -71,14 +71,18 @@
     });
 
     $(window).scroll(function () {
-      var activeTop = $(window).scrollTop();                                  // Find distance from top of page
-      if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
-        $('.link_menu').css("position", "static");
+      if ($(window).width() <= 801) {                                   //do nothing on mobile
       }
       else {
-        $('.link_menu').css("position", "fixed");                            // anchored link menu to page
-        $('.link_menu').css("top", "-15px");
-        $('.link_menu').css("left", "absolute");
+        var activeTop = $(window).scrollTop();                                  // Find distance from top of page
+        if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
+          $('.link_menu').css("position", "static");
+        }
+        else {
+          $('.link_menu').css("position", "fixed");                            // anchored link menu to page
+          $('.link_menu').css("top", "-15px");
+          $('.link_menu').css("left", "absolute");
+        }
       }
     });
 
@@ -116,12 +120,12 @@
 
     function openNavBar() {
       if (toggle == 0) {
-      document.getElementById("link_menu").style.display = "block";
-      toggle++;
+        document.getElementById("link_menu").style.display = "block";
+        toggle++;
       }
       else {
-      document.getElementById("link_menu").style.display = "none";  
-      toggle--;
+        document.getElementById("link_menu").style.display = "none";
+        toggle--;
       }
     }
 
@@ -163,7 +167,8 @@
   <div class="background">
     <div class="wrapper">
 
-      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu" data-inline="false"></span> </button>
+      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu"
+          data-inline="false"></span> </button>
 
       <!-- banners -->
       <!-- banners -->
@@ -172,8 +177,8 @@
 
       <div class="banner_l">
         <p>
-          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png"
-              alt="go to donation" align="top" id="banner_item"> Donate</a>
+          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png" alt="go to donation"
+              align="top" id="banner_item"> Donate</a>
           &nbsp &nbsp
           <a href="https://www.facebook.com/GuidingLightChristianEducationalCenter/" style="text-decoration:none;"> <img
               src="assets/facebook.png" alt="go to facebook" align="top" id="banner_item"> Facebook</a>
@@ -184,11 +189,11 @@
         </p>
       </div>
       <div class="banner_r">
-        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png"
-            alt="call phone" align="top" id="banner_item"> (928) 855-1022 </a>
+        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" alt="call phone"
+            align="top" id="banner_item"> (928) 855-1022 </a>
         &nbsp &nbsp &nbsp &nbsp
         <a class="open_button" style="text-decoration:none;" onclick="openForm_contact()"> <img src="assets/mail.png"
-             alt="go to donation" align="top" id="banner_item"> Contact Us</a>
+            alt="go to donation" align="top" id="banner_item"> Contact Us</a>
 
         <div class="form-popup" id="contactForm">
           <form name="generalcontactform" method="post" class="form-container" action="contactForm.php">
@@ -237,18 +242,23 @@
           <div class="link" id="drop_button"> <a class="link"> Useful Links </a>
             <div class="drop">
               <div class="drop_link"> <a
-                  href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light" class="link"> Arizona
+                  href="https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light" class="link">
+                  Arizona
                   Dep. of Health Services </a> </div>
-              <div class="drop_link"> <a href="https://www.azccrr.com/" class="link"> Childcare Resources & Referral </a>
+              <div class="drop_link"> <a href="https://www.azccrr.com/" class="link"> Childcare Resources & Referral
+                </a>
               </div>
               <div class="drop_link"> <a
                   href="https://des.az.gov/services/child-and-family/child-care/how-apply-for-child-care-assistance"
                   class="link"> Department of Economic Security </a> </div>
               <div class="drop_link"> <a href="https://www.firstthingsfirst.org/" class="link"> First Things First </a>
               </div>
-              <div class="drop_link"> <a href="https://ecedassociates.com/" class="link"> Early Childhood Eduducation Inc. </a>
+              <div class="drop_link"> <a href="https://ecedassociates.com/" class="link"> Early Childhood Eduducation
+                  Inc. </a>
               </div>
-              <div class="drop_link"> <a href="https://www.swhd.org/programs/health-and-development/birth-to-five-helpline/" class="link"> Birth to Five
+              <div class="drop_link"> <a
+                  href="https://www.swhd.org/programs/health-and-development/birth-to-five-helpline/" class="link">
+                  Birth to Five
                   Helpline </a> </div>
               <div class="drop_link"> <a href="https://www.zerotothree.org/" class="link"> Zero to Three </a> </div>
               <div class="drop_link"> <a href="scholarships.html" class="link"> Scholarship Information </a> </div>

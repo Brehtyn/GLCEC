@@ -71,14 +71,18 @@
     });
 
     $(window).scroll(function () {
-      var activeTop = $(window).scrollTop();                                  // Find distance from top of page
-      if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
-        $('.link_menu').css("position", "static");
+      if ($(window).width() <= 801) {                                   //do nothing on mobile
       }
       else {
-        $('.link_menu').css("position", "fixed");                            // anchored link menu to page
-        $('.link_menu').css("top", "-15px");
-        $('.link_menu').css("left", "absolute");
+        var activeTop = $(window).scrollTop();                                  // Find distance from top of page
+        if (activeTop <= (distance)) {                                          // release link menu on adequate scroll distance
+          $('.link_menu').css("position", "static");
+        }
+        else {
+          $('.link_menu').css("position", "fixed");                            // anchored link menu to page
+          $('.link_menu').css("top", "-15px");
+          $('.link_menu').css("left", "absolute");
+        }
       }
     });
 
