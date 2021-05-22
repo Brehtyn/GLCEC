@@ -54,6 +54,7 @@ li {
 }
 #li_border{
   border:1px solid #000000;
+  padding:4px;
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  POP-UPs  ~~~~~~~~~~~~~~~~~~~~~~~  */
@@ -355,6 +356,15 @@ body {
 
 #intro_bot {
   text-align: right;
+}
+
+#program_outline{
+  border-radius: 32px;
+  background-image: linear-gradient(to top, #a9d16b, #6bd390, #0ad0b9, #00c8da, #26bcec, #1ebff2, #13c2f9, #00c5ff, #00dafa, #00eada, #00f6a3, #8efb5f);
+  padding:45px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 #pic_1 {
@@ -720,6 +730,15 @@ body {
     font-family:"Raleway", Arial;
   }
 
+  #program_outline{
+    border-radius: 32px;
+    background-image: linear-gradient(to top, #a9d16b, #6bd390, #0ad0b9, #00c8da, #26bcec, #1ebff2, #13c2f9, #00c5ff, #00dafa, #00eada, #00f6a3, #8efb5f);
+    padding:45px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
   #pic_1 {
     height:auto;
     width:320px;
@@ -1066,6 +1085,15 @@ body {
       line-height: 32px;
       text-align:center;
       font-family:"Raleway", Arial;
+    }
+
+    #program_outline{
+      border-radius: 32px;
+      background-image: linear-gradient(to top, #a9d16b, #6bd390, #0ad0b9, #00c8da, #26bcec, #1ebff2, #13c2f9, #00c5ff, #00dafa, #00eada, #00f6a3, #8efb5f);
+      padding:35px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
 
     #pic_1 {
