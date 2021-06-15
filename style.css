@@ -1029,13 +1029,13 @@ nav {
     }
 
     .link_menu{
-      width:auto;
       display:none;
       background-image: linear-gradient(to right top, #b7b7b7, #c3c3c6, #ccd0d5, #d5dee3, #ddecf0, #d3e9ee, #c9e5ec, #bee2ea, #a1cbdf, #8bb4d4, #7d9bc6, #7981b5);
       z-index: 2;
       position:fixed;
       padding-top:20px;
       border-radius:10px;
+      margin: 0 auto;
       margin-top:20px;
       
     }
