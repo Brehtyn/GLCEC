@@ -1038,7 +1038,7 @@ nav {
       margin: 0 auto;
       margin-top:20px;
       margin-left:-10px;
-      
+      width:fit-content;
     }
 
     #link_menu{
