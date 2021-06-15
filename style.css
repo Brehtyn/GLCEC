@@ -1025,7 +1025,8 @@ nav {
       font-family:"Raleway", Arial;
       font-weight:bold;
       position: fixed;
-      margin:0 auto;
+      display:flex;
+      flex-direction: column;
     }
 
     .link_menu{
@@ -1035,10 +1036,11 @@ nav {
       position:fixed;
       padding-top:20px;
       border-radius:10px;
-      margin: 0 auto;
       margin-top:20px;
-      margin-left:-10px;
-      width:fit-content;
+      left: 50; 
+      right: 50; 
+      margin-left: auto; 
+      margin-right: auto; 
     }
 
     #link_menu{
@@ -1046,18 +1048,17 @@ nav {
 
     .link {
       height:40px;
-      width:100%;
       float:left;
       text-align:center;
       list-style-type: none;
       text-decoration: none;
+      width: 100%;
     }
 
     .drop {
       position:absolute;
       margin-top:35px;
       padding-top:20px;
-      width:100%;
       height:max-content;
       border-radius: 10px;
       z-index: 1 !important;
@@ -1065,8 +1066,8 @@ nav {
     }
 
     .drop_link {
-      height:40px;
       width:100%;
+      height:40px;
       float:left;
       text-align:center;
     }
