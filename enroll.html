@@ -161,8 +161,9 @@
 
   </script>
 
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+  <script async defer crossorigin="anonymous" 
+  if ($(window).width() <= 801) {    } 
+  else { src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0" }></script>
 
   <div class="background">
     <div class="wrapper">
