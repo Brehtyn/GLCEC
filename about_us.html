@@ -37,9 +37,9 @@
 <body onLoad="time()">
   <script>
     var distance;
-    var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)", "url(assets/banner_6.png)"];   // initiate slideshow
-    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'", "'Looking back as an alumni, this school gave me everything I needed to be succesfull in life.'"];
-    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."," - Brent H."];
+    var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)"];   // initiate slideshow
+    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
+    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."];
     var links = ["index.html", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
     var i = 0; //header slideshow picture counter
     var toggle = 0 // mobile navbar toggle variable
@@ -49,14 +49,14 @@
     }
 
     function picleft() {                                                       // scroll left on slideshow
-      if (i <= 0) { i = 5 }
+      if (i <= 0) { i = 4 }
       else { i-- }
       document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
       document.getElementById('links_slideshow').href = links[i];
     }
 
     function picright() {                                                      // scroll right on slideshow
-      if (i >= 5) { i = 0 }
+      if (i >= 4) { i = 0 }
       else { i++ }
       document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
       document.getElementById('links_slideshow').href = links[i];
@@ -100,8 +100,7 @@
       setTimeout("advance()", 15000);
       setTimeout("advance()", 20000);
       setTimeout("advance()", 25000);
-      setTimeout("advance()", 30000);
-      setTimeout("time()", 35000);
+      setTimeout("time()", 30000);
     }
 
     function openForm_contact() {
@@ -121,12 +120,12 @@
 
     function openNavBar() {
       if (toggle == 0) {
-        document.getElementById("link_menu").style.display = "block";
-        toggle++;
+      document.getElementById("link_menu").style.display = "block";
+      toggle++;
       }
       else {
-        document.getElementById("link_menu").style.display = "none";
-        toggle--;
+      document.getElementById("link_menu").style.display = "none";  
+      toggle--;
       }
     }
 
@@ -162,14 +161,14 @@
 
   </script>
 
-  <script async defer crossorigin="anonymous" if ($(window).width() <=801) { } else {
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0" }></script>
+<script async defer crossorigin="anonymous" 
+if ($(window).width() <= 801) {    } 
+else { src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0" }></script>
 
   <div class="background">
     <div class="wrapper">
 
-      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu"
-          data-inline="false"></span> </button>
+      <button onclick="openNavBar()" class="link_mobile_button"> <span class="iconify" data-icon="oi:menu" data-inline="false"></span> </button>
 
       <!-- banners -->
       <!-- banners -->
@@ -178,23 +177,23 @@
 
       <div class="banner_l">
         <p>
-          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png" alt="go to donation"
-              align="top" id="banner_item"> Donate</a>
+          <a href="donation.html" style="text-decoration:none;"> <img src="assets/donate.png" 
+              alt="go to donation" align="top" id="banner_item"> Donate</a>
           &nbsp &nbsp
           <a href="https://www.facebook.com/GuidingLightChristianEducationalCenter/" style="text-decoration:none;"> <img
-              src="assets/facebook.png" alt="go to facebook" align="top" id="banner_item"> Facebook</a>
+              src="assets/facebook.png"  alt="go to facebook" align="top" id="banner_item"> Facebook</a>
           &nbsp &nbsp
           <a href="https://goo.gl/maps/ifVrNqKA4fRYr2xH6" style="text-decoration:none;"> <img src="assets/map.png"
-              alt="navigate map" align="top" id="banner_item"> 220 Mescal Ln </a>
+               alt="navigate map" align="top" id="banner_item"> 220 Mescal Ln </a>
           &nbsp &nbsp
         </p>
       </div>
       <div class="banner_r">
-        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png" alt="call phone"
-            align="top" id="banner_item"> (928) 855-1022 </a>
+        <a href="tel:+19288551022" style="text-decoration:none;"> <img src="assets/phone.png"
+            alt="call phone" align="top" id="banner_item"> (928) 855-1022 </a>
         &nbsp &nbsp &nbsp &nbsp
         <a class="open_button" style="text-decoration:none;" onclick="openForm_contact()"> <img src="assets/mail.png"
-            alt="go to donation" align="top" id="banner_item"> Contact Us</a>
+             alt="go to donation" align="top" id="banner_item"> Contact Us</a>
 
         <div class="form-popup" id="contactForm">
           <form name="generalcontactform" method="post" class="form-container" action="contactForm.php">
@@ -229,14 +228,6 @@
         <div id="pic_right" onClick="picright()"> </div>
       </div>
 
-      <div class="notice_banner"> We are hiring! Send your resume to 
-        <a id="notice_banner_links" href = "mailto:office@glcec.org?subject = Application&body = Message"> office@glcec.org</a> 
-        <br>
-        or call
-        <a id="notice_banner_links" href="tel:+19288551022"> (928) 855-1022</a>
-        to apply!
-      </div>
-
       <!-- links -->
       <!-- links -->
       <!-- links -->
@@ -262,9 +253,7 @@
               </div>
               <div class="drop_link"> <a href="https://ecedassociates.com/" class="link"> Early Childhood Edu Inc. </a>
               </div>
-              <div class="drop_link"> <a
-                  href="https://www.swhd.org/programs/health-and-development/birth-to-five-helpline/" class="link">
-                  Birth to Five
+              <div class="drop_link"> <a href="https://www.swhd.org/programs/health-and-development/birth-to-five-helpline/" class="link"> Birth to Five
                   Helpline </a> </div>
               <div class="drop_link"> <a href="https://www.zerotothree.org/" class="link"> Zero to Three </a> </div>
               <div class="drop_link"> <a href="scholarships.html" class="link"> Scholarship Info </a> </div>
@@ -333,13 +322,13 @@
 
         <h2> Picture Gallery </h2>
 
-        <img id="pic_2" src="assets/intro.jpg" alt="children hanging from domed playground equipment" width="70%">
+          <img id="pic_2" src="assets/intro.jpg" alt="children hanging from domed playground equipment" width="70%">
 
-        <img id="pic_2" src="assets/school_overview.jpg" alt="A shot of the preschool with the American Flag"
-          width="70%">
+          <img id="pic_2" src="assets/school_overview.jpg" alt="A shot of the preschool with the American Flag"
+            width="70%">
 
-        <img id="pic_2" src="assets/playground.jpg"
-          alt="Swing set, benches, playground sets and other outdoor equipment" width="70%">
+          <img id="pic_2" src="assets/playground.jpg"
+            alt="Swing set, benches, playground sets and other outdoor equipment" width="70%">
 
         </p>
 
@@ -367,7 +356,7 @@
         <div class="spacer"> </div>
 
         <h2> Meet the Front Office! </h2>
-
+        
         <br />
 
         <div class="profile">
@@ -401,8 +390,8 @@
             A more detailed future description will be avaliable later!
           </p>
         </div>
-
-        <!-- 
+        
+<!-- 
         <div class="profile">
           <h3> Raelene Hanna </h3>
           <h5> Office Administrator </h5>
@@ -515,8 +504,7 @@
         </div>
 
         <div class="footer_bottom">
-          <p> &copy; GLCEC Org. All Rights Reserved 2020-2021 | <a id="footer_link" href="https://iBigital.com"> Created
-              by Bigital </a> </p>
+          <p> &copy; GLCEC Org. All Rights Reserved 2020-2021 | <a id="footer_link" href="https://iBigital.com"> Created by Bigital </a> </p>
         </div>
 
       </div>
