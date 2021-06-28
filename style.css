@@ -592,7 +592,7 @@ nav {
     width:1050px;
     text-align:center;
     padding:15px 0 15px 0;
-    text-size-adjust:auto;
+    border-radius:1rem;
     font-size:21px;
     float:left;
     background-color: black !important;
@@ -961,17 +961,15 @@ nav {
 {
 
   .notice_banner {
-    margin-top:82px;
+    margin-top:102px;
     width:300px;
-    margin-left:-175px;
-    padding:15px 200px 15px 200px;
     height:fit-content;
     min-width:fit-content;
     text-align:center;
-    text-size-adjust:auto;
     font-size:21px;
     float:left;
     background-color: black !important;
+    border-radius:1rem;
     color:white !important;
   }
   #notice_banner_links {
