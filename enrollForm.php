@@ -3,6 +3,7 @@
 $child_name = $_POST['child_name'];
 $child_birthdate = $_POST['child_birthdate'];
 $child_pt = $_POST['child_pt'];
+$child_gender = $_POST['child_gender'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $work_phone = $_POST['work_phone'];
@@ -28,6 +29,7 @@ $email_body = "You have received a new message from $name.
 \r\n Here is the workphone: \r\n $work_phone
 \r\n Here is the child's name: \r\n $child_name
 \r\n Here is the child's birthday: \r\n $child_birthdate
+\r\n Here is the child's gender: \r\n $child_gender
 \r\n The child is potty trained: \r\n $child_pt
 \r\n Here is the program requested: \r\n $program
 \r\n Here is the date: \r\n $date_needed

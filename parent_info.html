@@ -137,8 +137,8 @@
     }
 
     function validateForm() {
-      var j = document.forms["generalcontactform"]["name"].value;
-      if (j == "") {
+      var k = document.forms["generalcontactform"]["name"].value;
+      if (k == "") {
         alert("Please provide your name.");
         return false;
       }
@@ -152,12 +152,26 @@
         alert("Please provide your email address.");
         return false;
       }
-      var k = document.forms["generalcontactform"]["comments"].value;
+      var k = document.forms["generalcontactform"]["message"].value;
       if (k == "") {
         alert("Please include your desired comment.");
         return false;
       }
     }
+
+    function private_validateForm() {
+      var k = document.forms["privatecontactform"]["private_name"].value;
+      if (k == "") {
+        alert("Please provide a name or alias.");
+        return false;
+      }
+      var k = document.forms["privatecontactform"]["private_message"].value;
+      if (k == "") {
+        alert("Please include your desired comment.");
+        return false;
+      }
+    }
+
 
   </script>
 
@@ -327,9 +341,9 @@ else { src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0" }></
             <input type="email" class="private_form" name="private_email" placeholder="optional">
 
             Cocerns(s):
-            <textarea type="text" class="private_form" name="private_message" placeholder="What is the issue?"> </textarea>
+            <textarea type="text" class="private_form" name="private_message"> </textarea>
 
-            <button type="submit" class="btn" value="Send Form" onclick="return validateForm_private()"> Submit </button>
+            <button type="submit" class="btn" value="Send Form" onclick="return private_validateForm()"> Submit </button>
             <a href="" class="btn_cancel" onclick="closeForm()"> Close </a>
 
           </form>

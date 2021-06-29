@@ -137,8 +137,8 @@
     }
 
     function validateForm() {
-      var j = document.forms["generalcontactform"]["name"].value;
-      if (j == "") {
+      var k = document.forms["generalcontactform"]["name"].value;
+      if (k == "") {
         alert("Please provide your name.");
         return false;
       }
@@ -152,9 +152,57 @@
         alert("Please provide your email address.");
         return false;
       }
-      var k = document.forms["generalcontactform"]["comments"].value;
+      var k = document.forms["generalcontactform"]["message"].value;
       if (k == "") {
         alert("Please include your desired comment.");
+        return false;
+      }
+    }
+
+    function validateForm_enroll() {
+      var k = document.forms["enrollcontactform"]["child_name"].value;
+      if (k == "") {
+        alert("Please provide your child's name.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["child_birthdate"].value;
+      if (k == "") {
+        alert("Please provide a birthdate for your child.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["child_gender"].value;
+      if (k == "") {
+        alert("Please provide a gender for your child.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["child_pt"].value;
+      if (k == "") {
+        alert("Please indicate if your child is potty trained or not.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["name"].value;
+      if (k == "") {
+        alert("Please include your name.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["phone"].value;
+      if (k == "") {
+        alert("Please provide your phone number.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["email"].value;
+      if (k == "") {
+        alert("Please provide your email address.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["program"].value;
+      if (k == "") {
+        alert("Please include the program you are interested in for the child.");
+        return false;
+      }
+      var k = document.forms["enrollcontactform"]["date_needed"].value;
+      if (k == "") {
+        alert("Please include the date you will need this by.");
         return false;
       }
     }
@@ -450,6 +498,9 @@
             <br />
             Birth Date:
             <input type="date" class="private_form" name="child_birthdate" placeholder="01/01/2015">
+            <br />
+            Gender:
+            <input type="text" class="private_form" name="child_gender">
 
             <br />
 
