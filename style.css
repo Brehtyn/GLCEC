@@ -57,6 +57,7 @@ li {
   padding:4px;
 }
 
+
 /*  ~~~~~~~~~~~~~~~~~~~~~~~  POP-UPs  ~~~~~~~~~~~~~~~~~~~~~~~  */
 
 .open_button {
@@ -158,6 +159,10 @@ li {
 
 @media screen and (min-width:1250.5px) {
 
+.notice_banner {
+  display:none;
+}
+  
 body {
   background-image: url(assets/bg.png);
   background-repeat: repeat-x;
@@ -580,6 +585,23 @@ nav {
 
  {
 
+  .notice_banner {
+    margin-top:95px;
+    margin-left:-125px;
+    height:fit-content;
+    width:1050px;
+    text-align:center;
+    padding:15px 0 15px 0;
+    border-radius:1rem;
+    font-size:21px;
+    float:left;
+    background-color: black !important;
+    color:white !important;
+  }
+  #notice_banner_links {
+    color:white !important;
+  }
+
   body {
     background-image: url(assets/bg_med.png);
     background-repeat: repeat-x;
@@ -938,6 +960,22 @@ nav {
 
 {
 
+  .notice_banner {
+    margin-top:102px;
+    width:300px;
+    height:fit-content;
+    min-width:fit-content;
+    text-align:center;
+    font-size:21px;
+    float:left;
+    background-color: black !important;
+    border-radius:1rem;
+    color:white !important;
+  }
+  #notice_banner_links {
+    color:white !important;
+  }
+
     body {
       background-image: url(assets/bg_small.png);
       background-repeat: repeat-x;
@@ -1082,7 +1120,6 @@ nav {
 
     .content_box {
       width:340px;
-      margin:100px 10px 0 10px;
       float:left;
       font-size:20px;
       line-height: 32px;

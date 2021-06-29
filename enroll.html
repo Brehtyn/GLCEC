@@ -37,10 +37,10 @@
 <body onLoad="time()">
   <script>
     var distance;
-    var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)"];   // initiate slideshow
-    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'"];
-    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."];
-    var links = ["index.html", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/"];
+    var pic_slideshow = ["url(assets/banner_1.png)", "url(assets/banner_2.png)", "url(assets/banner_3.png)", "url(assets/banner_4.png)", "url(assets/banner_5.png)", "url(assets/banner_6.png)"];   // initiate slideshow
+    var testimony_slideshow = ["'Guiding Light has a staff that is nice and caring!! They go above and beyond!! Thank you Guiding Light staff!!!'", "'It's great to see such wonderful people providing such a great and important service ... to ensure that the little folks of Havasu are able to get a loving and guided education!'", "'We love Guiding Light! My son has learned and grown so much since attending.'", "'Thank you so much for making my girls feel at home.'", "'Wonderful staff that genuinely cares about their students and families! My daughter loves this school!'", "'Looking back as an alumni, this school gave me everything I needed to be succesfull in life.'"];
+    var testimony_slideshow_bottom = [" - Tina V", " - Mo S.", " - Melanie N.", " -Al L.", " - Jodie C."," - Brent H."];
+    var links = ["index.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/posts/448300146573901", "donation.html", "enroll.html", "https://www.facebook.com/GuidingLightChristianEducationalCenter/", "https://hsapps.azdhs.gov/ls/sod/Provider.aspx?ProviderName=guiding%20light"];
     var i = 0; //header slideshow picture counter
     var toggle = 0 // mobile navbar toggle variable
 
@@ -49,14 +49,14 @@
     }
 
     function picleft() {                                                       // scroll left on slideshow
-      if (i <= 0) { i = 4 }
+      if (i <= 0) { i = 5 }
       else { i-- }
       document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
       document.getElementById('links_slideshow').href = links[i];
     }
 
     function picright() {                                                      // scroll right on slideshow
-      if (i >= 4) { i = 0 }
+      if (i >= 5) { i = 0 }
       else { i++ }
       document.getElementById('pic_slideshow').style.backgroundImage = pic_slideshow[i];
       document.getElementById('links_slideshow').href = links[i];
@@ -100,7 +100,8 @@
       setTimeout("advance()", 15000);
       setTimeout("advance()", 20000);
       setTimeout("advance()", 25000);
-      setTimeout("time()", 30000);
+      setTimeout("advance()", 30000);
+      setTimeout("time()", 35000);
     }
 
     function openForm_contact() {
@@ -120,12 +121,12 @@
 
     function openNavBar() {
       if (toggle == 0) {
-      document.getElementById("link_menu").style.display = "block";
-      toggle++;
+        document.getElementById("link_menu").style.display = "block";
+        toggle++;
       }
       else {
-      document.getElementById("link_menu").style.display = "none";  
-      toggle--;
+        document.getElementById("link_menu").style.display = "none";
+        toggle--;
       }
     }
 
@@ -274,6 +275,14 @@
           <div id="pic_slideshow"> </div>
         </a>
         <div id="pic_right" onClick="picright()"> </div>
+      </div>
+
+      <div class="notice_banner"> We are hiring! Send your resume to 
+        <a id="notice_banner_links" href = "mailto:office@glcec.org?subject = Application&body = Message"> office@glcec.org</a> 
+        <br>
+        or call
+        <a id="notice_banner_links" href="tel:+19288551022"> (928) 855-1022</a>
+        to apply!
       </div>
 
       <!-- links -->
