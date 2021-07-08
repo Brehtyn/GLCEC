@@ -36,7 +36,7 @@ This project is purchased & used primarily by the following company(s):
 
 ## Tech Stack
 
-HTML/CSS/JS
+HTML/CSS/JS/PHP
 
 
 

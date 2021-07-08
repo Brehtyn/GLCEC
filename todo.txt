@@ -1,6 +1,5 @@
  ~~~~~~~~~~~~ General ~~~~~~~~~~~~ 
 
-- contact us / enroll / complaint form (Office EmaiL: SHANTA@GLCEC.ORG)
 - google validate
 - fix reviews timer code
 - give header banner bubble selections
@@ -10,12 +9,6 @@
  ~~~~~~~~~~~~ About Us ~~~~~~~~~
 
 - sharons pic
-- teacher messages
-- code/photoshop photogallery 
-
- ~~~~~~~~~~~ Enrollment Services ~~~~~~~~~
-
-- change gender to a textbox
-
+- photogallery 
 
 - *final approval*
